@@ -5,7 +5,6 @@ Evalu8 is a project aiming to develop a complete LLM-based end-to-end web applic
 
 We took up this project during the summer vacation and developed it for the faculty of our department, the School of Artificial Intelligence at Amrita Vishwa Vidyapeetham, Coimbatore, India.
 
-For a quick demonstration of the work, you can directly skip to the [Demo](#demo) section of this documentation. 
 
 **Note of Gratitude** : Completing this project in time would not have been possible without the support and co-operation of my wonderful team.
 
