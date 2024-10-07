@@ -157,10 +157,4 @@ https://github.com/user-attachments/assets/0769e346-45ee-4748-a941-2d2a6962f4ee
 - Matlab Engine
 <br><br>
 
-# Queries and Feedback
 
-For any Queries and feedback please mail me at notvenupulagam@gmail.com
-
-Hope the documentation helped you learn something about the project. I wish all the best for the next team to handle this project.
-
-*Thank you.*
