@@ -1,9 +1,9 @@
 # EVALU8
 
-Evalu8 is a project aiming to develop a complete end-to-end web application for automating evaluations in Amrita Vishwa Vidyapeetham, Coimbatore. This will be referred to as E8 in this documentation.
+Evalu8 is a project aiming to develop a complete LLM-based end-to-end web application for automating evaluations in Amrita Vishwa Vidyapeetham, Coimbatore. This will be referred to as E8 in this documentation.
 <br>
 
-This project was assigned to us as an Internship, by the Department of Artificial Intelligence, Amrita Vishwa Vidyapeetham, Coimbatore.
+We took up this project during the summer vacation and developed it for the faculty of my department, the School of Artificial Intelligence at Amrita Vishwa Vidyapeetham, Coimbatore, India.
 
 For a quick demonstration of the work, you can directly skip to the [Demo](#demo) section of this documentation. 
 
