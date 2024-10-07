@@ -69,7 +69,6 @@ The setup for this project is pretty simple and straight-forward. Just following
 
 5. As we have the data and python environment ready to use, you can simply run the app.py and find the webpage open in your browser, served on the localhost.
 
-**We highly recommend going through the [demo](#demo) video before you start.**
 
 <br>
 
