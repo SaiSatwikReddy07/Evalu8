@@ -34,8 +34,6 @@ Keeping the heavy quantum of work in mind, the project has been divided into mul
 2. [Student portal](#student-portal)
 3. [Admin portal](#admin-portal)
 
-The work that is yet to be completed is discussed in detail in the [Work to do](#work-to-do) section of this documentation.
-
 The data preparation for this project was a hectic task. We had to follow a set of strict instructions. We recommend you to go through the [instructions](static/assets/FA_INSTRUCTIONS.pdf) before anything.
  <br><br>
 
