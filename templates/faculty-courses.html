@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Courses | Evalu8</title>
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <script src="{{url_for('static', filename='scripts/faculty-courses-scripts.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/faculty-courses-styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/E8-favicon.png') }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    
+    <header id="main-header">
+        <h2 class="logo">E8.</h2>
+        <div class="header-navigation">
+            <button onclick="redirect('showFacultyDashboard')">Dashboard</button>
+            <button onclick="redirect('facultyCourses')">Courses</button>
+            <button onclick="redirect('facultyTestHistory')">Tests</button>
+            <button onclick="redirect('facultyProfile')">Profile</button>
+            <button onclick="logout()">Logout <span class="material-symbols-outlined">logout</span></button>
+        </div>
+    </header>
+
+    <h1 class="welcome-note">Active Courses</h1>
+
+    <div id="active-container">
+        <!---
+        <div class="course-card">
+            <h1 class="course-code">21AIE101</h1>
+
+            <div class="information">
+                <p class="course-name">Natural Language Processing</p>
+                <div class="student-info">
+                    <p id="student_count"><span class="material-symbols-outlined">person</span> 79 Students</p>
+                    <p id="student_count"><span class="material-symbols-outlined">groups</span> 2021 AIE A</p>
+                    <p id="active">Active</p>
+                </div>
+            </div>
+
+            <div class="button-column">
+                <button class="open-course">Open course</button>
+                <button class="create-test">Create Test</button>
+            </div>
+        </div>
+        -->
+    </div>
+
+    <h2 id="inactive-head">Inactive/Expired Courses 
+        <button id="open-inactive" onclick="openInactive()">
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </button>
+    </h2>
+
+
+    <div id="inactive-container">
+        <!--
+        <div class="course-card">
+            <h1 class="course-code" id='course-code'>21AIE101</h1>
+
+            <div class="information">
+                <p class="course-name" id="course-name">Natural Language Processing</p>
+                <div class="student-info">
+                    <p id="student-count"><span class="material-symbols-outlined">person</span> 79 Students</p>
+                    <p id="student-batch"><span class="material-symbols-outlined">groups</span> 2021 AIE A</p>
+                    <p id="inactive">Inactive</p>
+                </div>
+            </div>
+
+            <div class="button-column">
+                <button class="make-inactive">Mark Inactive</button>
+                <button class="pin-course">Pin Course</button>
+                <button class="open-course">Open course</button>
+            </div>
+        </div>
+        -->
+    </div>
+    
+</body>
+</html>

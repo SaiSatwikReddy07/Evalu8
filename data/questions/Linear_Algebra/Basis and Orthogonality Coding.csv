@@ -1,0 +1,17 @@
+﻿question_number,faculty_id,question_text,image_link_if_any_in_question,difficulty_tag,language,question_type,student_solution,reference_solution,test_case_1,test_case_2,test_case_3,test_case_4,test_case_5
+1,CEN-2103,"Write a function that determines whether two input vectors are orthogonal. 
+The function should take two vectors of equal length as input and return a logical value:
+ true if the vectors are orthogonal, and false otherwise.
+ Do not use any built-in MATLAB functions for vector operations
+ (except for basic arithmetic operations).",NA,EASY,Matlab,Full function,https://drive.google.com/file/d/1IsB1Fat019aKIcFaPaETwt8rDBD281qb/view?usp=drive_link,https://drive.google.com/file/d/1cvnLdz3LrxvqInsRXkP3gVXtndLiCa6n/view?usp=sharing,"([1; 2],[1,1; -1,1])","([1; 1],[1,1; 1,1])","([1; 1],[-1,1; 1,1])","([1; 2;3],[1,1; -1,1])",
+2,CEN-2103,"Write a function that determines whether a given set of 2D vectors forms a basis for \(\mathbb{R}^2\). 
+The function should take a \(2 \times 2\) matrix as input, where each column represents a vector, and 
+return a logical value: \texttt{true} if the vectors form a basis for \(\mathbb{R}^2\), and \texttt{false} otherwise. 
+Do not use any built-in MATLAB functions for matrix operations (except for basic arithmetic operations).",NA,EASY,Matlab,Full function,https://drive.google.com/file/d/1KUeyzYXJGSJHlDad17ndPIoNbEsJS_hY/view?usp=drive_link,https://drive.google.com/file/d/1dN9RG4Cl_ItOGrpQXobGmkbpJ0RQ1DeS/view?usp=drive_link," [1,0; 0,1]","[1,1; 2,2]","[1,2; 2,4]","[0,1; 0,0]",
+3,CEN-2103,"Complete the following function that projects a vector onto a subspace 
+spanned by an orthonormal basis",NA,MEDIUM,Matlab,Fill in the blank,https://drive.google.com/file/d/1YiGcRW3WcCwGu4NUV11FOShFOQ5fngIt/view?usp=drive_link,https://drive.google.com/file/d/1cgb4x7VMIDJ4DbaQOOkM3fqjJwmgPYfy/view?usp=drive_link,"([1; 2; 3],[1,0,0; 0,1,0; 0,0,1])","([1; 2; 3],[1 1 0; 1 -1 0; 0 0 1])","([1; 2],[1 1; -1 1])","([2; 1; -1],[-1 1 0; 1 1 0; 0 0 1])",
+4,CEN-2103,"Complete the following function that implements the Gram-Schmidt process
+ to orthogonalize a set of vectors",NA,MEDIUM,Matlab,Fill in the blank,https://drive.google.com/file/d/1IUIJBv-KuhK1OJrtlpQOHe_eYqAly7HQ/view?usp=sharing,https://drive.google.com/file/d/1o9dDfIZX4bzd0HqXqav9_ey8D9wkbFsG/view?usp=drive_link,"[1,2,4; 5,2,1; 3,7,9]","[1,0; 0,1]","[1,1; 1,-1]","[3,0; 0,1;1,1]","[1,2; 3,4]"
+5,CEN-2103,"Write a function that takes a list of vectors and determines if they form an orthogonal basis for \(\mathbb{R}^n\). 
+Assume the vectors are in \(n\)-dimensional space. 
+The function should return a boolean indicating whether the vectors form an orthogonal basis.",NA,MEDIUM,Python,Full function,https://drive.google.com/file/d/17-Z_dEptjGFavHxprr6BeJQOvtqMCZ0z/view?usp=sharing,https://drive.google.com/file/d/1a1bIWcL7y84eKOwckRglFXn-G5bFSjce/view?usp=drive_link,"[1,2; 3,4]","[1,2,4; 5,2,1; 3,7,9]","[1,1; 1,-1]","[1,0; 0,1]",

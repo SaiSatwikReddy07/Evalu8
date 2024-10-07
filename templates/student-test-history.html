@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Test History | Evalu8</title>
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Include KaTeX library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <!-- Optional: KaTeX auto-render extension -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="{{url_for('static', filename='scripts/student-test-history-scripts.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student-test-history-styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/E8-favicon.png') }}">
+
+</head>
+
+<body>
+
+    <div id="main-container">
+
+        <header id="main-header">
+            <h2 class="logo">E8.</h2>
+            <div class="header-navigation">
+                <button onclick="redirect('showStudentDashboard')">Dashboard</button>
+                <button onclick="redirect('studentCourses')">Courses</button>
+                <button onclick="redirect('studentTestHistory')">Tests</button>
+                <button onclick="redirect('studentProfile')">Profile</button>
+                <button onclick="logout()">Logout <span class="material-symbols-outlined">logout</span></button>
+            </div>
+        </header>
+
+        <div id="top">
+            
+            <div id="left">
+                <div id="active-tests-container" class="left-containers">
+                    <h3 class="div-headers">Active Tests</h3>
+
+                    <div id="active-tests">
+
+                        <div id="no-active-tests">
+                            <h3>No active tests.</h3>
+                        </div>
+                        
+                        <!--
+                        <div class="test-card">
+                            <h2 id="course-code">21AIE101</h2>
+                            <div id="others">
+                                <h3>Sample Quiz 1</h3>
+                                <p>2021 AIE A</p>
+                                <div class="time">
+                                    <p>10 June 2024</p>
+                                    <p>08:30 - 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                    
+                </div>
+                <div id="upcoming-tests-container" class="left-containers">
+                    <h3 class="div-headers">Upcoming Tests</h3>
+                    
+                    <div id="upcoming-tests">
+
+                        <div id="no-upcoming-tests">
+                            <h3>No upcoming tests.</h3>
+                        </div>
+
+                        <!--
+                        <div class="test-card">
+                            <h2 id="course-code">21AIE101</h2>
+                            <div id="others">
+                                <h3>Sample Quiz 1</h3>
+                                <p>2021 AIE A</p>
+                                <div class="time">
+                                    <p>10 June 2024</p>
+                                    <p>08:30 - 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="right">
+                <h3 class="div-headers">Completed Tests</h3>
+                
+                <div id="completed-tests">
+
+                    <div id="no-completed-tests">
+                        <h1>No completed tests.</h1>
+                    </div>
+
+                    <!--
+                    <div class="test-card">
+                        <h3 id="course-code">21AIE101</h3>
+                        <div id="others">
+                            <h3>Test name</h3>
+                            <p>2021 AIE A</p>
+                            <button class="evaluate-button">Evaluate</button>
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="bottom">
+
+            <div id="no-test-selected">
+                <h3>No test selected. Click evaluate on a completed test to get the overview.</h3>
+            </div>
+
+            <div id="overview-container">
+                <div id="primary">
+                    <h1 id="test-name"></h1>
+                    <div id="primary-inner">
+                        <p>No. of questions : <span id="no-of-questions"></span></p>
+                        <table border="1">
+                            <tr>
+                                <th>Difficulty</th>
+                                <th>Quantity</th>
+                                <th>Score</th>
+                                <th>Total Score</th>
+                            </tr>
+
+                            <tr>
+                                <td>Easy</td>
+                                <td id="easy-quantity"></td>
+                                <td id="easy-score">2</td>
+                                <td id="easy-total-score"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Medium</td>
+                                <td id="medium-quantity"></td>
+                                <td id="medium-score">3</td>
+                                <td id="medium-total-score"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Hard</td>
+                                <td id="hard-quantity"></td>
+                                <td id="hard-score">5</td>
+                                <td id="hard-total-score"></td>
+                            </tr>
+                        </table>
+                        
+                        <p>Total marks : <span id="overview-total"></span></p>
+                    </div>
+                </div>
+
+                <div id="secondary">
+                    <h1>Test Overview</h1>
+                    <div id="secondary-inner">
+                        <p>No. of attendees : <span id="test-overview-attendees"></span></p>
+                        <p>Highest score : <span id="test-overview-highest-score"></span></p>
+                        <p>Least Score : <span id="test-overview-lowest-score"></span></p>
+                        <p>Average Score : <span id="test-overview-average-score"></span></p>
+                        <div id="secondary-buttons-row">
+                            <button>Download Attendance </button>
+                            <button>Download Marks sheet</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="student-overview">
+                    <h1>Student Overview</h1>
+                    <div id="student-inner">
+                        <p>Student ID : <span id="student-overview-student-id"></span></p>
+                        <p>Total score : <span id="student-overview-total-score"></span></p>
+                        <p>No. of questions answered : <span id="student-overview-questions-answered"></span></p>
+                        <p>No. of correct answers : <span id="student-overview-correct-answers"></span></p>
+                        <p>Position in class : <span id="student-overview-position"></span></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="questions-container">
+                
+                <div id="questions">
+
+                    <div id="no-student-selected">
+                        <h3>The student's test paper will be displayed here</h3>
+                    </div>
+
+                    <div id="no-submissions-made">
+                        <h3>The test has expired, but no submissions were received</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

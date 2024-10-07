@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Faculty Profile | Evalu8</title>
+    
+    <script src="{{url_for('static', filename='scripts/faculty-profile-scripts.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/faculty-profile-styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/E8-favicon.png') }}">
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+    
+    <header id="main-header">
+        <h2 class="logo">E8.</h2>
+        <div class="header-navigation">
+            <button onclick="redirect('showFacultyDashboard')">Dashboard</button>
+            <button onclick="redirect('facultyCourses')">Courses</button>
+            <button onclick="redirect('facultyTestHistory')">Tests</button>
+            <button onclick="redirect('facultyProfile')">Profile</button>
+            <button onclick="logout()">Logout <span class="material-symbols-outlined">logout</span></button>
+        </div>
+    </header>
+
+    <div id="head">
+        <span class="material-symbols-outlined">account_circle</span>
+        <div id="name-and-id">
+            <p id="name"></p>
+            <p id="id"></p>
+        </div>
+    </div>
+
+    <div id="main-container">
+
+        <table id="information-table">
+            <tr>
+                <th>Date of Birth</th>
+                <td id="date-of-birth"></td>
+            </tr>
+
+            <tr>
+                <th>Program</th>
+                <td id="program"></td>
+            </tr>
+
+            <tr>
+                <th>Specialization</th>
+                <td id="specialization"></td>
+            </tr>
+
+            <tr>
+                <th>Batch</th>
+                <td id="batch"></td>
+            </tr>
+
+            <tr>
+                <th>Campus</th>
+                <td id="campus"></td>
+            </tr>
+
+            <tr>
+                <th>School</th>
+                <td id="school"></td>
+            </tr>
+
+            <tr>
+                <th>Mobile Number</th>
+                <td id="mobile-number"></td>
+            </tr>
+
+            <tr>
+                <th>Personal Email</th>
+                <td id="personal-email"></td>
+            </tr>
+
+            <tr>
+                <th>College Email</th>
+                <td id="college-email"></td>
+            </tr>
+
+        </table>
+    </div>

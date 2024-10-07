@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard | Evalu8</title>
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <script src="{{url_for('static', filename='scripts/faculty-dashboard-scripts.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/faculty-dashboard-styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/E8-favicon.png') }}">
+
+</head>
+
+<body>
+    <header id="main-header">
+        <h2 class="logo">E8.</h2>
+        <div class="header-navigation">
+            <button onclick="redirect('showFacultyDashboard')">Dashboard</button>
+            <button onclick="redirect('facultyCourses')">Courses</button>
+            <button onclick="redirect('facultyTestHistory')">Tests</button>
+            <button onclick="redirect('facultyProfile')">Profile</button>
+            <button onclick="logout()">Logout <span class="material-symbols-outlined">logout</span></button>
+        </div>
+    </header>
+
+    <h1 class="welcome-note">Welcome back, <span id="faculty-name"></span></h1>
+
+    <div id="main-container">
+        <div id="quote-and-widgets">
+            <div id="quote"></div>
+            <div id="widgets">
+                <div id="courses-and-tests">
+                    <button id="courses" onclick="openCreateCourse()">
+                        <i class="material-symbols-outlined">auto_stories</i>
+                        <h2>Add course</h2>
+                    </button>
+                    <button id="tests" onclick="redirect('createTest')">
+                        <i class="material-symbols-outlined">school</i>
+                        <h2>Add Test</h2>
+                    </button>
+
+                    <div id="create-course">
+                        <div id="create-course-row-one">
+                            <input placeholder="Course Code" id="course-code">
+                            <input placeholder="Course Name" id="course-name">
+                            <select name="batches" id="batches">
+                                <!--
+                                <option value="2021_AIE_B">2021_AIE_B</option>
+                                <option value="2021_AIE_A">2021_AIE_A</option>
+                                -->
+                            </select>
+                        </div>
+                        <div id="create-course-button-row" class="create-course-button-row">
+                            <button id="cancel-add-course" onclick="closeCreateCourse()">Cancel</button>
+                            <button id="add-course" onclick="createCourse()">Add Course</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="feedback">
+                    <i class="fa-solid fa-bug"></i>
+                    <h2>Feedbacks</h2>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="pinned-course-header">Pinned Courses <i class="material-symbols-outlined">bookmark</i></h2>
+        
+        <div id="pinned-courses-container">
+
+            <!--
+            <div class="pinned-course">
+                <div class="course-code">21AIE301</div>
+                <div class="others">
+                    <div class="course-name">Natural language</div>
+                    <div class="information">
+                        <div class="students">
+                            <i class="material-symbols-outlined">person</i>
+                            <p class="no-of-students">70</p>
+                        </div>
+
+                        <div class="batch">
+                            <i class="material-symbols-outlined">groups</i>
+                            <p class="batch">2025 AIE A</p>
+                        </div>
+
+                        <button class="remove-pinned"><i class="material-symbols-outlined">delete</i></button>
+                    </div>
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>
+
+</body>
+</html>

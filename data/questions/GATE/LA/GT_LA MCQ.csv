@@ -1,0 +1,382 @@
+question_number,faculty_id,question_text,image_link_if_any_in_question,difficulty_tag,question_type,option_1,option_2,option_3,option_4,correct_answer
+,,,,,,,,,,
+1,21038,Which of the following sets of vectors is linearly dependent?,NA,Easy,Single correct,"\(\{(1,2),(3,4)\}\)","\(\{(1,0,0),(0,1,0),(0,0,1)\}\)","\(\{(1,2,3),(4,5,6),(7,8,9)\}\)","\(\{(1,1,0),(0,1,1),(1,0,1)\}\)",3
+2,21038," If a set of vectors contains the zero vectors, then it is always:",NA,Easy,Single correct,Linearly independent, Linearly dependent,Orthogonal ,Unitary,2
+3,21038,Which of the following conditions is necessary for a set of vectors to be linearly independent?,NA,Easy,Single correct,The vectors must have the same length, the vectors must be orthogaonal,The vectors must be nonzero,The vectors must be in \(\mathbb{R}^n\),3
+4,21038,"If a set of vector is linearly dependent, then:",NA,Easy,Single correct, It must contain zero vectors.,It must contan more vectors than the dimension of the space, It must be orthogonal,It must be unitary,2
+5,21038,Which of the following statemens is true for a set of linearly independent vectors?,NA,Easy,Single correct,The vectors must span the space,The vectors must be orthogonal,The vectors must be in \(\mathbb{R}^n\),The vectors must be unique,1
+6,21038,The determinant of  a matrix is zero of and only if its columns are:,NA,Easy,Single correct,Orthogonal,Unitary,Linearly independent, Lineraly dependent,4
+7,21038,How can you determine if a set of vectors is linearly dependent or independent?How can you determine if a set of vectors is linearly dependent or independent?,NA,Medium,Single correct,By checking if the determinant of the matrix formed by the  vectors is zero.,By solving a system of linear equations.,By row-reducing the matrix formed by the vectors., All of the above  ,4
+8,21038,"If a set of vectors is linearly dependent, then any subset of that set 
+is also:",NA,Easy,Single correct,Linearly independent,Linearly dependent,Orthogonal ,Unitary ,2
+9,21038,"If a set of vectors is linearly independent, then
+any superset of that set is also:",NA,Easy,Single correct,Not necessarily linearly independent , Linearly independent, Linearly dependent,Orthogonal,1
+10,21038,The rank of a matrix is equal to,NA,Easy,Single correct,The number of rows in the matrix.,The number of columns in the matrix.,The maximum number of linearly independent columns in the matrix,the determinant of the matrix.  ,3
+11,21038,Which of the following matrices is orthogonal?,NA,Easy,Single correct,\(\begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}\),\(\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\),\(\begin{pmatrix} \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \end{pmatrix}\),\(\begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}\),3
+12,21038, What is the product of two orthogonal matrices?,NA,Easy,Single correct,Always an orthogonal matrix,Always a diagonal matrix.,Always a singular matrix.,Always an identity matrix ,2
+13,21038,What is the inverse of an orthogonal matrix?,NA,Easy,Single correct,Its transpose,Its negative.,"Its cofactor matrix,", Its adjugate matrix,1
+14,21038,What is the determinant of an orthogonal matrix?,NA,Easy,Single correct, Always1.,Always-1.,Always 0,Always a positive number.,1
+15,21038, What is the trace of an orthogonal matrix? ,NA,Easy,Single correct,Always1.,Always-1.,Always 0,Always a real number.,4
+16,21038,What is the relationship between the eigenvalues of an orthogonal matrix?,NA,Easy,Single correct,They are all 1,They are all -1,They have absolute value 1.,They are all real numbers.,3
+17,21038,Whatis the relationship between the eigenvectors of an orthogonal matrix?,NA,Easy,Single correct, They are all orthogonal,They are all unit vectors.,They are all linearly independent.,They are all parallel.,1
+18,21038,What is the geometric interpretation of an orthogonal matrix?,NA,Easy,Single correct,It represents a rotation or reflection., It represents a scaling, It represents a projection,It represents a shearing,1
+19,21038,"Which of the following operations preserves
+orthogonality?",NA,Easy,Single correct,Multiplying by a scalar.,Transpose.,Inverse., All of the above.,4
+20,21038,What is the rank of a projection matrix?,NA,Easy,Single correct,Always1., Always equal to its dimension,Always less than or equal to its dimension.,Always greater than its dimension,4
+21,21038,What is the trace of a projection matrix?,NA,Easy,Single correct,Always1, Always 0,Equal to its rank.,Always equal to its dimension,3
+22,21038, What is the determinant of a projection matrix?,NA,Easy,Single correct, Always1., Always 0,Always greater than 0,Always less than or equal to 1,4
+23,21038,What is the null space of a projection matrix?,NA,Easy,Single correct,The orthogonal complement of the subspace it projects onto.,The subspace it projects onto.,The entire vector space.,The empty set.,1
+24,21038, What is the range of a projection matrix?,NA,Easy,Single correct,The orthogonal complement of the subspace it projects onto.,The subspace it projects onto.,The entire vector space.,The empty set.,2
+25,21038,"How can you construct a projection matrix
+a subspace spanned by a set of vectors?",NA,Easy,Single correct,By multiplying the vectors by their transpose,By taking the inverse of the matrix formed by the vectors,By multiplying the matrix formed by the vectors by its transpose and then taking the inverse,By multiplying the matrix formed by the vectors by its transpose and then dividing by the  trace.,4
+26,21001,"Which of the following matrices is a projection
+matrix?",NA,Medium,Single correct,$\begin{bmatrix} 1 & 0 \ 0 & 0 \end{bmatrix}$,$\begin{bmatrix} 1 & 1 \ 0 & 1 \end{bmatrix}$,$\begin{bmatrix} \frac{1}{2} & \frac{1}{2} \ \frac{1}{2} & \frac{1}{2} \end{bmatrix}$,$\begin{bmatrix} 0 & 1 \ 1 & 0 \end{bmatrix}$,1
+27,21001,"What is the effect of multiplying a 
+vector by a projection matrix?
+",NA,Easy,Single correct,It rotates the vector,It reflects the vector,It projects the vector onto the subspace defined by the projection matrix,It scales the vector,3
+28,21001,"What is the relationship between projection
+matrices and orthogonal matrices?",NA,Medium,Single correct,All projection matrices are orthogonal matrices,All orthogonal matrices are projection matrices,Some projection matrices are orthogonal matrices,"There is no relationship between projection matrices and orthogonal matrices.
+",3
+29,21001,"What is the relationship between the eigenvalues of a projection matrix?
+",NA,Easy,Single correct,They are all 1.,They are all 0.,They are either 1 or 0.,They are all real numbers.,3
+30,21001,"What is the relationship between the 
+eigenvectors of a projection matrix?
+",NA,Medium,Single correct,They form an orthogonal basis for the vector space.,They are all parallel,They are all linearly independent,They are all unit vectors,1
+31,21001,"What is the geometric interpretation
+ of a projection matrix?",NA,Easy,Single correct,It represents a rotation of the vector space,"It represents a reflection of the vector space.
+","It represents a scaling of the vector space.
+","It represents a projection onto a subspace.
+",4
+32,21001,"How can you determine if a matrix
+ is a projection matrix?
+",NA,Medium,Single correct,By checking if it is square and symmetric,By checking if it is idempotent ($P^2 = P$),By checking if its eigenvalues are 1 or 0.,All of the above.,4
+33,21001,"What is the orthogonal complement
+ of the projection matrix \( P \)?
+",NA,Medium,Single correct,The identity matrix \( I \),The matrix \( P \) itself,The matrix \( I - P \),The zero matrix,3
+34,21001,"What is the relationship between
+ the projection matrices \( P \) and \( Q \) 
+if their product \( PQ = 0 \)?
+",NA,Medium,Single correct,Their ranges are orthogonal,Their null spaces are orthogonal, They are inverses of each other,They are equal,1
+35,21001,What is the norm of a projection matrix?,NA,Easy,Single correct,Always 1, Always 0,Always less than or equal to 1,Always greater than 1,3
+36,21001,"What is the trace of the product of 
+two projection matrices \( P \) and \( Q \)?
+",NA,Medium,Single correct,"Always equal to the trace of PQ.","Always equal to the trace of P plus the trace of Q.
+","Always less than or equal to the trace of P plus the trace of Q.","Always greater than the trace of P plus the trace of Q.
+",3
+37,21001,"Which of the following is a valid
+ way to partition a matrix?
+",NA,Easy,Single correct,"Dividing it into sub-matrices 
+of equal size.
+","Dividing it into sub-matrices 
+of different sizes.
+","Dividing it along its rows and columns.","All of the above.
+",4
+38,21001,"What is the size of the partitioned matrix 
+\( [A \; | \; B] \)?
+",NA,Easy,Single correct,"The sum of the sizes of A and B.
+","The product of the sizes of A and B.
+","The size of A.","The size of B.",1
+39,21001,What is the transpose of the partitioned matrix $[A | B]$?,NA,Easy,Single correct,$\left(A^T|B^T\right)$,"$\left[B^T|A^T\right]$
+","$[A|B]^T$
+","None of the above.",1
+40,21001,"What is the inverse of the partitioned
+ matrix $[A | B]$, where $A$ is invertible?",NA,Easy,Single correct,$[A^{-1} | -A^{-1}B]$,"$[A | B]^{-1}$
+",$[A^{-1} | B^{-1}]$,None of the above,1
+41,21001,"What is the product of the 
+partitioned matrices $[A | B]$ and $[C | D]$?",NA,Medium,Single correct,$[AC | BD]$,$[A + C | B + D]$,$[AC + BD | AD + BC]$,None of the above,4
+42,21001,"What is the determinant of the
+ partitioned matrix $[A | B]$?",NA,Hard,Single correct, $\det(A) \det(B)$,$\det(A) + \det(B)$,$\det(A) - \det(B)$,None of the above,4
+43,21001,"What is the rank of the partitioned 
+matrix $[A | B]$?",NA,Medium,Single correct,The rank of $A$.,The rank of $B$.,The maximum of the ranks of $A$ and $B$.,None of the above.,4
+44,21001,"What is the null space of the partitioned
+ matrix  $[A|B]$?
+",NA,Medium,Single correct,"The intersection of the null spaces of A and B.","The union of the null spaces of A and B.","The null space of A.","The null space of B.
+",3
+45,21001,What is the range of the partitioned matrix $[A|B]$?,NA,Medium,Single correct,The union of the ranges of $A$ and $B$,"The intersection of the ranges of $A$ and $B$.
+","The range of $A$.
+","The range of $B$.
+",1
+46,21001,"What is a quadratic form?
+",NA,Easy,Single correct,"A linear function of a vector.
+","A function of a vector represented by a quadratic expression in terms of its elements.","A matrix multiplication involving a vector.
+","A determinant of a matrix.",2
+47,21001,"How can a quadratic form be
+ represented by a matrix?
+",NA,Medium,Single correct,By multiplying the vector by its transpose.,"By multiplying the vector by 
+its transpose and then multiplying 
+by the transpose again.
+","By forming a symmetric matrix
+ where entries represent coefficients
+ of quadratic and cross-product terms.
+","By forming a diagonal matrix with 
+squares of individual vector elements.
+",3
+48,21001,"What is the relationship between the
+ eigenvalues of the matrix associated 
+with a quadratic form and the nature of the form?
+",NA,Medium,Single correct,"All positive eigenvalues 
+indicate a positive definite form.
+","All non-zero eigenvalues
+ indicate an indefinite form.
+","Positive and negative eigenvalues indicate a negative definite form.","Zero eigenvalues indicate a singular form.",3
+49,21001,"What is the geometric interpretation
+ of a positive definite quadratic form?
+",NA,Medium,Single correct,"It represents a sphere.","It represents a hyperplane.","It represents an ellipsoid.","It represents a parabola.
+",3
+50,21001,"What is the criterion for a matrix to be positive definite?
+",NA,Medium,Single correct,"All its principal minors must be positive.","All its eigenvalues must be positive.","It must be invertible.","It must be symmetric.
+",1
+51,21028,"How can you determine if a quadratic form is positive definite, negative definite, or indefinite?",NA,Easy,Single correct,By checking the symmetry of the associated matrix.,By analyzing the signs of the principal minors of the associated matrix.,"By calculating the determinant of the associated matrix.
+",By plotting the graph of the form.,2
+52,21028,What is the relationship between the completion of the square and the diagonalization of a quadratic form?,NA,Easy,Single correct, Both involve eliminating cross product terms.,Completion of the square leads to a diagonalmatrix., Diagonalization requires completing the square.,Both involve adding a constant term.,1
+53,21028,What is the Hessian matrix of a scalar field?,NA,Easy,Single correct,The matrix of second-order partial derivatives.,The matrix of firsb-order partial derivatives.,The Jacobian matrix.,The Laplace matrix.,1
+54,21028,What is the significance of the eigenvalues of the Hessian matrix in  optimization problems?,NA,Easy,Single correct,They determine the convergence speed of gradient descent algorithms .,"Positive eigenvalues indicate minima,","Negative eigenvalues indicate maxima, and eigenvalues indicate saddle points.",They are always positive for convex functions.,3
+55,21028,"How can you solve the equation \( A\mathbf{x} = \lambda \mathbf{x} \), where \( A \) is a symmetric matrix and \( \lambda \) is a scalar, for the eigenvalues and eigenvectors?",NA,Easy,Single correct,By using Gaussian elimination.,By applying LU decomposition.,"By utilizing eigen solvers or spectral
+decomposition techniques.",By solving the characteristic equation \(\det(A - \lambda I) = 0\).,3
+56,21028,"What is the purpose of projection in computer
+graphics?",NA,Easy,Single correct,To create 3D objects,To represent 2D images,To enhance color,To generate shadows,2
+57,21028,Which type of projection preserves relative size but not angles?,NA,Easy,Single correct, Orthographic projection,Perspective projection,Isometric projection,Oblique projection,1
+58,21028,,,Easy,Single correct,,,,,
+59,21028,,,Easy,Single correct,,,,,
+60,21028,"Which of the following projections is commonly
+used in engineering and technical 
+drawings?",NA,Easy,Single correct,Perspective projection,Orthographic projection, Isometric projection,Oblique projection,2
+61,21028,What is the purpose of a vanishing point in perspective projection?,NA,Easy,Single correct, Tb create shadow,To represent distant objects,To define the projection plane,To control foreshortening,4
+62,21028,,,Easy,Single correct,,,,,
+63,21028,Which type of projection is commonly used in video games and computer graphics applications?,NA,Easy,Single correct,Orthographic projection,Perspective projection, Isometric projection, Cabinet projection,2
+64,21028,What is the primary drawback of perspective projection?,NA,Easy,Single correct,Distorted angles,Equal scaling,Lack of depth perception,Complexity,1
+65,21028,What is  the range of a matrix?,NA,Easy,Single correct,The set of all possible column vectors.,The set of all possible row vectors.,"The set of all possible linear combinations of
+its  column vectors.","The set of all possible linear combinations of
+its row vectors.",3
+66,21028,What is the dimension of the range of a matrix?,NA,Easy,Single correct,The number of rows in the matrix.,"The number of columns in the matrix.
+",The rank of the matrix., The determinant of the matrix,3
+67,21028,"What is the relationship between the range of a
+matrix and its null space?",NA,Easy,Single correct,They are orthogonal complementsofeach other.,They are equal .,They are always disjoint., They have the same dimension,1
+68,21028,How can you find the range of a matrix?,NA,Easy,Single correct,By finding the basis for the column space of the matrix.,By finding the basis for the null space of the matrix.,By finding the determinant of the matrix.,By finding the eigenvalues of the matrix,1
+69,21028,What is the range of the identity matrix?,NA,Easy,Single correct,The entire vector space.,The zero vector,The set of all unit vectors.,The set of all non-zero vectors.,2
+70,21028,What is the range of a zero matrix?,NA,Easy,Single correct,The entire vector space.,The zero vector.,The set of all unit vectors.,The set of all non-zero vectors.,2
+71,21028,What is the range of a matrix with linearly independent columns?,NA,Easy,Single correct,The entire vector space.,The zero vector.,The set of all unit vectors., The set of all non-zero vectors.,1
+72,21028,What is the range of a matrix with linearly dependent columns?,NA,Easy,Single correct,A subspace of the vector space.,A subspace of the vector space.,The set of all unit vectors., The set of all non-zero vectors.,1
+73,21028,What is the relationship between the range of a matrix and its transpose?,NA,Easy,Single correct,The range of the matrix is equal to the range of its transpose.,"The range of the matrix is orthogonal to the
+range of its transpose.","The range of the matrix isa subset of the range
+of its transpose.","The range of the matrix is a superset of the
+range of its transpose.",2
+74,21028,What is the relationship between the range of a matrix and its inverse?,NA,Easy,Single correct,The range of the matrix is equal to the range of its inverse.,The range of the matrix is orthogonal to the range of its inverse.,The rangeofthematrix isasubsetofthe range of its inverse,The range of the matrix is a superset of the range of its inverse.,4
+75,21028,What is the dimensionof the null spaceofamatrix?,NA,Easy,Single correct,The number of rows in the matrix., The number of columns in the matrix.,The rank of the matrix., The nullity of the matrix.,4
+76,21168,How can you find the null space of a matrix?,NA,Easy,Single correct,By finding the basis for the row space of the matrix.,By finding the basis for the column space of the matrix.,By solving the homogeneous equation $A \mathbf{x} = \mathbf{0}$.,By finding the eigenvalues of the matrix.,3
+77,21168,What is the relationship between the null space and the column space of a matrix?,NA,Easy,Single correct,They are orthogonal complements of each other.,They are equal.,They are always disjoint.,They have the same dimension.,1
+78,21168,What is the null space of the identity matrix?,NA,Easy,Single correct,The entire vector space.,The zero vector.,The set of all unit vectors.,The set of all non-zero vectors.,2
+79,21168,What is the null space of a zero matrix?,NA,Easy,Single correct,The entire vector space.,The zero vector.,The set of all unit vectors.,The set of all non-zero vectors.,1
+80,21168,What is the null space of a matrix with linearly independent columns?,NA,Easy,Single correct,The entire vector space. ,The zero vector.,The set of all unit vectors.,The set of all non-zero vectors.,2
+81,21168, What is the null space of a matrix with linearly dependent columns?,NA,Easy,Single correct, A subspace of the vector space. ,The zero vector.,The set of all unit vectors.,The set of all non-zero vectors.,1
+82,21168,What is the relationship between the null spaceof a matrix and its transpose?,NA,Easy,Single correct,The null space of the matrix is equal to the null space of its transpose.,The null space of the matrix is orthogonal to the null space of its transpose.,The null space of the matrix is a subset of the null space of its transpose.,The null space of the matrix is a superset of the null space of its transpose.,2
+83,21168, What is the relationship between the nullity and the rank of a matrix?,NA,Easy,Single correct,They are always equal.,They are always proportional.,They add up to the dimension of the vector space.,There is no relationship between them.,3
+84,21168, What is the nullity of the identity matrix?,NA,Easy,Single correct,0,1,the dimension of the vector space,Cannot be determined,1
+85,21168,What is the nullity of a zero matrix?,NA,Easy,Single correct,0,The dimension of the vector space,1,Cannot be determined,2
+86,21168, What is the nullity of a matrix with linearly independent columns?,NA,Easy,Single correct,0,1,The dimension of the vector space ,Cannot be determined,1
+87,21168,What is the nullity of a matrix with line dependent columns?,NA,Easy,Single correct,0,1,Greater than or equal to 1,Cannot be determined,3
+88,21168,What is the geometric interpretation of the space?,NA,Easy,Single correct,A line passing through the origin.,A plane containing the origin.,"A subspace of the vector space containing origin and 
+all vectors that map to the zerovector when multiplied by the matrix ",A point at the origin.,3
+89,21168,What is the relationship between the null space of a matrix and its transpose?,NA,Easy,Single correct, They are equal.,They are othogonal complements of each other,They have the same dimension.,There is no relationship between them ,2
+90,21168,What is the relationship between the of a matrix  and its inverse?,NA,Easy,Single correct,The null space of a matrix is null space of its inverse.," The null space of a matrix is equal to the nullspace of its inverse, if it exists.",The null space of a matrix is the orthogonal complement of  the null space of its inverse,There is no relationship between them.,3
+91,21168,What is the primary goal of Gaussian Elimination linear algebra?,NA,Easy,Single correct,Finding the determinant,Solving systems of linear equations, Matrix inversion,Eigenvalue computation.,2
+92,21168,What is the first step in Gaussian Elimination?,NA,Easy,Single correct,Interchanging rows ,Row scaling,Row reduction ,Column swapping,3
+93,21168,"In Gaussian Elimination, what is the purpose of row operations?",NA,Easy,Single correct,To swap columns,To create identity matrix,To simplify the system of equations,To compute the eigenvalues,3
+94,21168,When is a system of linear equations said to be inconsistent using Gaussian Elimination?,NA,Easy,Single correct,When it has no solution,When it has a unique solution,When it has infinitely many solutions,When it has a determinant of zero,1
+95,21168,What does it mean for a matrix to be in reduced row-echelon form (RREF)?,NA,Easy,Single correct, All elements are zero,"All leading entries are 1, and each column containing a  leading 1 has all other entries as zero",The determinant is zero,The matrix is singular,2
+96,21168," In Gaussian Elimination, what is the purpose of back-substitution?",NA,Easy,Single correct,To solve for variables from bottom to top,To perform row operations,To find the determinant,To compute eigen vectors ,1
+97,21168,What is the significance of the pivot element in Gaussian Elimination?,NA,Easy,Single correct,It is the smallest element in a row,It is the largest element in a column,It is the first non-zero element in a row,It is used to create a zero entry in a column.,3
+98,21168,How does Gaussian Elimination handle a row of zeros in the augmented matrix?,NA,Easy,Single correct,It leaves it unchanged,It removes the row of zeros,It swaps the row with another row,It replaces the row with a row having non-zero entries,2
+99,21168,"In Gaussian Elimination, when do you perform row scaling?",NA,Easy,Single correct,To create zeros in a column,To make the leading entry equal to 1,To interchange rows,To simplify the system before back-substitution,2
+100,21168,What is a system of linear equations?,NA,Easy,Single correct, A set of equations involving constants only.,A set of equations where each equation relates unknown variables linearly.,A set ofequations where all variablesare raised to a power greater than 1.,A set of equations where the variables appear only in the denominators.,2
+101,21001,What are the different types of solutions for a system of linear equations?,NA,Easy,Single correct,"Unique solution, no solution, and multiple solutions",Only a unique solution exists.,Either a unique solution or no solution exists.,Any number of solutions can exist,1
+102,21001,How can you determine the number of solutions without solving the system?,NA,Medium,Single correct,"By counting the number of equations.
+","By comparing the number of equations and variables.
+","By checking the rank of the coefficient matrix and the augmented matrix.
+",By calculating the determinant of the coefficient matrix.,3
+103,21001,What is Gaussian Elimination?,NA,Easy,Single correct,A method for finding the eigenvalues of a matrix.,A technique for solving systems of linear equations by systematically eliminating variables through row operations.,A method for calculating the determinant of a matrix,A method for finding the inverse of a matrix,2
+104,21001,What is Cramer's Rule for solving systems of linear equations?,NA,Medium,Single correct,"A rule for finding the inverse of a matrix.
+","A formula for expressing each variable in a system as a determinant ratio of specific submatrices.
+","A rule for checking the consistency of a system of equations.
+","A rule for determining the 
+number of solutions to a system.",2
+105,21001,"What is the relationship between the inverse of the coefficient matrix and the solution to the system?
+",NA,Medium,Single correct,"The solution is the product of the inverse and the augmented matrix.
+","The solution is the product of the inverse and the constant vector in the augmented matrix.
+","The solution is the product of the inverse and the right-hand side vector in the augmented matrix.
+",There is no direct relationship between the inverse and the solution,3
+106,21001,"What is the geometric interpretation of a 
+system of linear equations in two variables?",NA,Easy,Single correct,A circle.,"A line or a set of parallel lines, depending on the coefficients.",A parabola.,A hyperbola,2
+107,21001,"What is the geometric interpretation of a homogeneous
+ system of linear equations (all right-hand sides are zero)?
+",NA,Medium,Single correct,"There is no geometric interpretation.
+","The solution space is the origin or
+ a line passing through the origin.
+","The solution space is a plane.
+",The solution space is the entire space.,2
+108,21001,"What are some real-world applications 
+of systems of linear equations?",NA,Easy,Single correct,"Circuit analysis.
+",Static equilibrium problems in mechanics.,Resource allocation and optimization problems,.All of the above.,4
+109,21001,"How can you check if a system of linear equations
+ is consistent (has solutions)?  ",NA,Medium,Single correct,By solving the system and seeing if you get a contradiction. , By checking the determinant of the coefficient matrix., By comparing the number of equations and variables. ,By analyzing the signs of the coefficients.,2
+110,21001,"What is Singular Value Decomposition (SVD)?
+",NA,Easy,Single correct,"A method for finding eigenvalues.
+","A factorization of a matrix into three other matrices.
+","A technique for solving differential equations.
+",A method for computing determinants.,2
+111,21001,"In SVD, what are the dimensions of the matrices U,
+ $\Sigma$, and V for an $m \times n$ matrix A?
+",NA,Medium,Single correct,"U: $m \times m$, $\Sigma$: $m \times n$, V: $n \times n$","U: $m \times n$, $\Sigma$: $n \times n$, V: $n \times n$","U: $m \times m$, $\Sigma$: $m \times n$, V: $n \times m$","U: $m \times n$, $\Sigma$: $m \times n$, V: $n \times m$",4
+112,21001,"What is the significance of the diagonal elements in the $\Sigma$ matrix in SVD?
+",NA,Medium,Single correct,They represent the eigenvalues of A,They indicate the rank of A.,They are singular values of A.,They contain the pivots of A.,3
+113,21001,"How is the matrix A reconstructed from its SVD components?
+",NA,Medium,Single correct,A = UV$\Sigma$,A = U$\Sigma$,A = $\Sigma$V,A = UV$^T$,4
+114,21001,"In SVD, what does the matrix U represent?",NA,Easy,Single correct,Left singular vectors,"
+Singular values","
+Right singular vectors",Eigenvalue,1
+115,21001,"In the context of SVD, what does the term
+ ""singular value"" refer to?
+",NA,Easy,Single correct,Diagonal elements of U,Diagonal elements of $\Sigma$,Diagonal elements of V,Elements of the original matrix A,2
+116,21001,"What is the relationship between the 
+singular values of the matrix A and its eigenvalues?
+",NA,Medium,Single correct,They are the same.,"Singular values are square roots of 
+eigenvalues
+ of $A^T A$ or $AA^T$",Singular values are reciprocals of eigenvalues.,There is no direct relationship.,2
+117,21001,"What is the purpose of SVD in data compression?",NA,Medium,Single correct,To increase the size of the data,To reduce the dimensionality of the data,To add noise to the data,To make the data more complex,2
+118,21001,"In SVD, if $\Sigma$ has a diagonal element equal to zero, 
+what does it imply about the original matrix A?
+",NA,Medium,Single correct,A is a square matrix,A is a singular matrix.,A is full rank.,A has linearly dependent columns.,2
+119,21001,,,Easy,Single correct,,,,,
+120,21001,What are the singular values of a matrix?,NA,Hard,Single correct,The eigenvalues of the matrix.,The square roots of the eigenvalues of the matrix.,The non-negative square roots of the eigenvalues of $A^T A$ or $AA^T$,The diagonal elements of the matrix,3
+121,21001,"What is the rank of a matrix in terms of its singular values?
+",NA,Medium,Single correct,The number of non-zero elements in the matrix.,The number of rows in the matrix.,The number of columns in the matrix.,The number of non-zero singular values.,4
+122,21001,"What is the relationship between the singular values
+ and the eigenvalues of a square matrix?
+",NA,Medium,Single correct,They are always equal,They are always proportional,"They are the same, but only for symmetric matrices",There is no relationship between them,3
+123,21001,"What is the pseudo-inverse of a matrix?",NA,Medium,Single correct,"The inverse of a matrix, if it exists.",A generalized inverse that can be computed for any matrix using SVD.,The transpose of a matrix.,The negative of a matrix.,2
+124,21001,"What is the condition number of a matrix?
+",NA,Hard,Single correct,The rank of the matrix.,The determinant of the matrix.,"The ratio of the largest to smallest singular value, indicating sensitivity to numerical errors.
+",The trace of the matrix.,3
+125,21001,"What is the low-rank approximation of a matrix using SVD?",NA,Medium,Single correct,Keeping only the largest eigenvalues of the matrix.,"Keeping only the largest singular values and their corresponding columns in U and V.
+",Setting the smallest singular values to zero.,Truncating the matrix to a smaller size.,2
+126,21028,What are some applications of SVD?,NA,Easy,Single correct,"Data compression, image processing, recommendation systems, principal component analysis (PCA).",Solving systems of linear equations.,Finding the eigenvalues of a matrix.,Calculating the determinant of a matrix.,1
+127,21028,How can you use SVD to find the best rank-k approximation of a matrix?,NA,Easy,Single correct,By keeping only the k largest eigenvalues of the matrix.,By keeping only the k largest singular values and their corresponding columns in U and V.,By setting the smallest k singular values to zero.,By truncating the matrix to a size of k.,2
+128,21028,Consider a matrix \( A \) with singular value decomposition \( A = U \Sigma V^T \). Which of the following statements are true?,NA,Easy,Multi correct, The columns of U form an orthonormal basis for the row space of A., The columns of V form an orthonormal basisfor the row space of A.,The singular values in I are always positive.,Matrix A is a always symmetric.,"1,2,3"
+129,21028,"
+For a given matrix \( A \) with SVD \( A = U \Sigma V^T \), which of the following statements are correct?",NA,Easy,Multi correct,The rank of A is equal to the number of non-zero singular values in S.," If A is a square matrix, then U and V inverses of each other.","If A is a symmetric matrix, U and V will be the same matrix",The determinant of A is equal to e product of singular values,"1,2"
+130,21028,"Given a matrix \( A \) with SVD \( A = U \Sigma V^T \), which of the following operations on \( A \) will result in the singular values in the decomposed form?",NA,Easy,Single correct, Adding a multiple of the identity matrix to A., Pre-multiplying A by an orthogonal matrix Q.(c) Applyingan element-wise square operation to A.,Taking the transpose of A,Taking the transpose of A^T,2
+131,21028,"Given a matrix \( A \) with SVD \( A = U \Sigma V^T \), which of the following statements are true about the matrix \( A^T A \)?",NA,Easy,Multi correct,AT A has the same singular values as A,The eigenvalues of AT A are the squares ofthe singular values of A,The rank of A1 A is always less than or equalto the rank of A.,he trace of AT A is equal to the sum of thesquared singular values of A.,"1,2,3"
+132,21028," Consider a rectangular matrix A with SVD, A = UZVT. Which of the followingstatements arecorrect?",NA,Easy,Multi correct,U has more columns than rows.,V has more rows than columns.,I has non-zero entries on along its maindiagonal.,U and V are always square matrices.,"1,2"
+133,21028,"Consider three systems of linear equations:
+\begin{align*}
+\text{I.} \quad 2x + 3y &= 5 \\
+\text{II.} \quad 4x + 6y &= 10 \\
+\text{III.} \quad 6x + 9y &= 15
+\end{align*}
+Which of the following statements are true?'",NA,Easy,Multi correct,All three systems have the same number ofsolutions.,Only system 1 has a unique solution,systems 2 and 3 are linearly dependent,none of system have unique soln,"1,3"
+134,21028,"Consider the system of linear equations:
+\[
+2x + 3y = 5
+\]
+\[
+4x - 2y = 6
+\]
+Which of the following statements are true?",NA,Easy,Multi correct,The system has u unique solution.,The system is inconsistent., The system hus infinitely many solutions.,The determinant of the coefficient matrix iszero.,"2,3,4"
+135,21028,"Consider the system of linear equations:
+\[
+3x - y = 2
+\]
+\[
+6x - 2y = 4
+\]
+Which of the following statements are true?",NA,Easy,Multi correct, The system has no solution.,The system is consistent.,The system has infinitely many soluti0ns,The determinant of the coefficient matrix is zero,"2,4"
+136,21028,Consider the augmented matrix of a system of linear equations after row reduction:select which of the following statements are true,https://drive.google.com/file/d/1thAs4kX0MfTYgYNpXOVjVvkGlKol3wQp/view?usp=drive_link,Easy,Multi correct,The system has a unique solution.,The system is inconsistent.,The system has infinitely many solutions.,The rank of the coefificien matrix is 3.,"1,4"
+137,21028,"Consider the system of linear equations:
+\[
+\begin{cases}
+x + 2y - z = 3 \\
+2x - y + z = 1 \\
+3x + y - 2z = 0
+\end{cases}
+\]
+Which of the following statements are true?",NA,Easy,Single correct,The system has a unique solution.,The system is inconsistent.,The system has infinitely many solutions., The determinant of the coefficient matrix is zero.,1
+138,21028,Consider the system of linear equations represented by the augmented matrix ,https://drive.google.com/file/d/1faTt7UkgERHOTMcw75X8VDtkYFnXmVwm/view?usp=drive_link,Easy,Single correct,The system has a unique solution.,The system is inconsistent.,The system has infinitely many solutions.,The rank of the augmented matrix is 3.,3
+139,21028,"Consider the system of linear equations:
+\[
+\begin{cases}
+2x + 3y = 5 \\
+4x - 2y = 6
+\end{cases}
+\]
+After applying Gaussian Elimination, which of the following statements are true?",NA,Easy,Single correct,The system has a unique solution.,The systom inconsistent.,The system has infinitely many solutions,The augmented matrix is row-equivalent to the identity matrix.,1
+140,21028,"Given a matrix A and its row-echelon form R,which of the following statements are true afterapplying Gaussian Elimination?",NA,Easy,Multi correct,The rank of A is equal to the ran of R.,The determinant of A is equal to thedeterminant of R.,The system represented by A is inconsistent.,The system represented by A has infinitely,"1,2"
+141,21028,Consider the augmented matrix of a system of linear equations after Gaussian Elimination :,https://drive.google.com/file/d/11_qOWICQb8gVOVUCfazcVZVLTKemyqjo/view?usp=drive_link,Easy,Single correct,The system has a unique solution.,The system is inconsistent.,The system has infimiitely many solutions.,The rank of the coefficien matrix is 3.,1
+142,21028,"Given a system of linear eqns with the augmented matrix: zero, which of the following statements are True?",https://drive.google.com/file/d/1JCzDR5-C5UU5Yk9jiH7jOYP5B6OZJRBK/view?usp=drive_link,Easy,Single correct,The system has a unique solution.,The system is inconsistent.,The system has infinitely many solutions.,The rank of the coefficient matrix is 2.,3
+143,21028,"Consider the system of linear equations:
+\[
+\begin{cases}
+x + 2y - z = 3 \\
+2x - y + z = 1 \\
+3x + y - 2z = 0
+\end{cases}
+\]. 
+After applying Gaussian Elimination, which of thefollowing statements are true?",NA,Easy,Single correct,The system has a unique solution.,The system is inconsistent.,The system has infinitely many solutions.,The determinant of the coefficient matrix is 0,1
+144,21028,"Consider a square matrix A with eigenvalues 0, 2, and 3. Which of the following statements aretrue about the nullity of A?",NA,Easy,Multi correct,The nullity of A is 1.,The nullity of A is at least 1.,The nullity of A is the same as the number of zero eigenvalues.,The nullity ofA is always equal to the rank of A.  ,"2,3"
+145,21028,Consider a matrix A with nullity k. Which of the following statements are true?,NA,Easy,Multi correct,The rank of A is k., The dimension of the column space of A is k.,The sum of the rank and nullity of A is equal to the number of columns in A.,The matrix A is invertible.,"2,3"
+146,21028,"Given a square matrix B, if the nullity of B isWhich of the following statements are true ?",NA,Easy,Single correct,The matrix B is invertible.,The matrix B is a diagonal matrix,The rank of Bisequal to the number of column,The determinant of B is zero.,1
+147,21028,"Consider a matrix C with nullity m. If C is a p x qmatrix, which of the followingstatements are true?",NA,Easy,Single correct,p + m = q,The rank of C is q- m.,The nullity of CT is p- m.,The matrix C has full column rank,1
+148,21028,"For a non-square matrix D with nullity n, which of the following statements are true?",NA,Easy,Single correct,The matrix D is invertible.,The rank ofDisequal to the number of columns.,The dimension of the column space of D is n.,The determinant of DT is zero.,"2,3"
+149,21028,Let E be a 3 x 4 matrix with nullity 2. Which of the following statements are true?,NA,Easy,Multi correct,The rank of E is 2.,The matrix E has full row rank,The nullity of ET is1.,The matrix E is singular,"1,3,4"
+150,21028,Consider a matrix A with nullity k. Which of the following statements are true?,NA,Easy,Multi correct,The rank of A is k.,The dimension of the column space of A is k.,The sum of the ran and nullity of A is equal to the number of columns in A.,The rank of A is k.,"2,3"
+151,21038,"Consider a matrix \( C \) with nullity \( m \). If \( C \) is a \( p \times q \) matrix, which of the following statements are true?",NA,Medium,Multi correct,\( p + m = q \),The rank of \( C \) is \( q - m \),The nullity of \( C \) is \( p - m \),The matrix \( C \) has full column rank,"1,3"
+152,21038,For a non-square matrix \( D \)  with nullity n. which of the following  statements are true?,NA,Medium,Multi correct,The matrix \( D \) is invertible.,The rank of \( D \) is equal to the number of columns,The dimension of the column space of \( D \) is \( n \).,The determinant of \( D \) is zero,"2,3"
+153,21038,Let \( E \) be a \( 3 \times 4 \) matrix with nullity 2. Which of the following statements are true?,NA,Easy,Multi correct,The rank of \( E \) is 2,The matrix \( E \) has full row rank,The nullity of \( E^T E \) is 1,The matrix \( E \) is singular,"1,3,4"
+154,21038,Consider a matrix \( A \) of order \( 3 \times 4 \) with nullity 2. Which of the following statements are true about the null space of \( A \) and the corresponding row space?,NA,Medium,Multi correct,The null space is a subspace of \(\mathbb{R}^4\),The dimension of the row space is 2,The null space contains only the zero vector,The dimension of the row space is 3,"1,3"
+155,21038,Let \( B \) be a square matrix of order \( n \) with nullity 0. Which of the following statements are true about the null space and the invertibility of \( B \)?,NA,Easy,Multi correct,The null space of \( B \) is trivial (contains only the zero vector),The matrix \( B \) is invertible,The dimension of the null space is \( n \),The rank of \( B \) is \( n \),"1,2,4"
+156,21038,Consider a matrix \( C \) with null space \( N(C) \) and a vector \( v \) in \( \mathbb{R}^n \) such that \( Cv = 0 \). Which of the following statements are true?,NA,Medium,Multi correct,\( v \) is in the null space of \( C \),The null space of \( C \) is a subspace of \( \mathbb{R}^n \),"If \( C \) is a square matrix, the null space is always non-trivial","If \( v \) is in the null space of \( C \), \( C \) must be the zero matrix","1,2,3"
+157,21038,"Given a matrix \( D \) with nullity \( k \), which of the following statements are true about the dimension of the null space and the rank of \( D \) respectively?",NA,Medium,Multi correct,The dimension of the null space is \( k \),The rank of \( D \) is \( k \),"If \( D \) is a square matrix, the dimension of the null space is always less than or equal to the order of \( D \)",The null space of \( D \) is orthogonal to the row space of \( D \),"1,3"
+158,21038,Consider a linear transformation represented by a matrix \( E \). Which of the following statements are true for some vector \( v \in \mathbb{R}^n \)?,NA,Medium,Multi correct,\( v \) is in the null space of \( E \),"If \( E \) is invertible, then \( v = 0 \)",The null space of \( E \) is always trivial,"If \( v \) is in the null space of \( E \), then \( E \) must be the zero matrix","1,2,3"
+159,21038,Consider a vector \( \mathbf{v} = \begin{pmatrix} 1 \\ 2 \end{pmatrix} \) in \( \mathbb{R}^2 \). Let \( \mathbf{u} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \) be a unit vector in the same space. Which of the following statements are true about the projection of \( \mathbf{v} \) onto \( \mathbf{u} \)?,NA,Medium,Multi correct,The projection of \( \mathbf{v} \) onto \( \mathbf{u} \) is parallel to \( \mathbf{u} \),The projection of \( \mathbf{v} \) onto \( \mathbf{u} \) is orthogonal to \( \mathbf{v} - \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) \),The magnitude of the projection of \( \mathbf{v} \) onto \( \mathbf{u} \) is equal to the magnitude of \( \mathbf{v} \),"If \( \mathbf{v} \) is already in the direction of \( \mathbf{u} \), then the projection is the same as \( \mathbf{v} \)","1,2,4"
+160,21038,Let \( P \) be the projection matrix onto a subspace \( W \) in \( \mathbb{R}^3 \). Which of the following statements are true about the matrix \( P \) and its properties?,NA,Easy,Multi correct,The matrix \( P \) is symmetric,The null space of \( P \) is the orthogonal complement of \( W \),The rank of \( P \) is the dimension of \( W \),The square of \( P \) is equal to \( P \),"1,2,3"
+161,21038,Consider a subspace \( U \) in \( \mathbb{R}^4 \) and a vector \( \mathbf{v} = \begin{pmatrix} 1 \\ 2 \\ -1 \\ 0 \end{pmatrix} \). Let \( P \) be the projection matrix onto \( U \). Which of the following statements are true about \( P \) and \( \mathbf{v} \)?,NA,Medium,Multi correct,The vector \( P\mathbf{v} \) is in \( U \),The vector \( \mathbf{v} - P\mathbf{v} \) is orthogonal to \( U \),"If \( \mathbf{v} \) is already in \( U \), then \( P\mathbf{v} = \mathbf{v} \)",The matrix \( P \) is singular,"1,2,3"
+162,21038,Let \( W \) be a subspace of \( \mathbb{R}^3 \) spanned by \( \mathbf{u} = \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix} \). Consider a vector \( \mathbf{v} = \begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix} \). Which of the following statements are true about the projection of \( \mathbf{v} \) onto \( W \)?,NA,Medium,Multi correct,The projection lies on the line spanned by \( \mathbf{u} \),The projection is orthogonal to the subspace \( W \),The projection is the closest point to \( \mathbf{v} \) in \( W \),The magnitude of the projection is equal to the magnitude of \( \mathbf{v} \),"1,2,3"
+163,21038,Consider a matrix \( A \) in \( \mathbb{R}^{2 \times 3} \) and let \( P \) be the projection matrix onto the column space of \( A \). Which of the following statements are true about \( P \) and its properties?,NA,Medium,Multi correct,The null space of \( P \) is the left null space of \( A \),The rank of \( P \) is equal to the rank of \( A \),The range of \( P \) is the column space of \( A \),"If \( A \) is a square matrix, then \( P \) is an identity matrix","1,2,3"
+164,21038,"Consider a quadratic form \( Q(\mathbf{x}) = \mathbf{x}^\top A \mathbf{x} \), where \( A \) is a symmetric matrix. Which of the following statements are true?",NA,Medium,Multi correct,"If \( A \) is positive definite, then \( Q(\mathbf{x}) > 0 \) for all \( \mathbf{x} \neq \mathbf{0} \)","If \( A \) is positive semidefinite, then \( Q(\mathbf{x}) \geq 0 \) for all \( \mathbf{x} \)","If \( A \) is negative definite, then \( Q(\mathbf{x}) < 0 \) for all \( \mathbf{x} \neq \mathbf{0} \)","If \( A \) is negative semidefinite, then \( Q(\mathbf{x}) \leq 0 \) for all \( \mathbf{x} \)","1,2,3,4"
+165,21038,"Let \( Q(\mathbf{x}) = \mathbf{x}^\top A \mathbf{x} \) be a quadratic form, where \( A \) is a symmetric matrix. Which of the following statements are true about the eigenvalues of \( A \) and the definiteness of \( Q(\mathbf{x}) \)?",NA,Hard,Multi correct,"If all eigenvalues of \( A \) are positive, then \( Q(\mathbf{x}) > 0 \) for all \( \mathbf{x} \neq \mathbf{0} \)","If all eigenvalues of \( A \) are non-negative, then \( Q(\mathbf{x}) \geq 0 \) for all \( \mathbf{x} \)","If all eigenvalues of \( A \) are negative, then \( Q(\mathbf{x}) < 0 \) for all \( \mathbf{x} \neq \mathbf{0} \)","If all eigenvalues of \( A \) are non-positive, then \( Q(\mathbf{x}) \leq 0 \) for all \( \mathbf{x} \)","1,2,3,4"
+166,21038,"Consider a symmetric matrix \( A \) and its eigenvectors \( \mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n \) corresponding to distinct eigenvalues. Let \( Q(\mathbf{x}) = \mathbf{x}^\top A \mathbf{x} \). Which of the following statements are true?",NA,Hard,Multi correct,"If \( \mathbf{x} \) is an eigenvector of \( A \), then \( Q(\mathbf{x}) \) is equal to the corresponding eigenvalue","If \( A \) is positive definite, then all eigenvalues of \( A \) are positive","If \( A \) is positive definite, then all eigenvalues of \( A \) are distinct","If \( Q(\mathbf{x}) \) is equal to an eigenvalue, then \( \mathbf{x} \) is an eigenvector of \( A \)","1,4"
+167,21038,Let \( A \) be a symmetric matrix and \( Q(\mathbf{x}) = \mathbf{x}^\top A \mathbf{x} \) be a quadratic form. Which of the following statements are true regarding the definiteness of \( A \) and the behavior of \( Q(\mathbf{x}) \)?,NA,Hard,Multi correct,"If \( A \) is positive definite, then \( Q(\mathbf{x}) \) attains its minimum value at \( \mathbf{x} = \mathbf{0} \)","If \( A \) is positive semidefinite, then \( Q(\mathbf{x}) \) is constant for all \( \mathbf{x} \)","If \( A \) is negative definite, then \( Q(\mathbf{x}) \) attains its maximum value at \( \mathbf{x} = \mathbf{0} \)","If \( A \) is negative semidefinite, then \( Q(\mathbf{x}) \) is constant for all \( \mathbf{x} \)","1,2,3,4"
+168,21038,"Consider a symmetric matrix \( A \) with eigenvalues. Let \( Q(\mathbf{x}) = \mathbf{x}^\top A \mathbf{x} \). Which of the following statements are true? (a) If all \( \lambda_i > 0 \), then \( A \) is positive definite. (b) If all \( \lambda_i \geq 0 \), then \( A \) is positive semidefinite.",NA,Medium,Multi correct,"If all \( \lambda_i > 0 \), then \( A \) is positive definite","If all \( \lambda_i \geq 0 \), then \( A \) is positive semidefinite","If all \( \lambda_i < 0 \), then \( A \) is negative definite","If all \( \lambda_i \leq 0 \), then \( A \) is negative semidefinite","1,2,3,4"
+169,21038,"Consider the partitioned matrix given below, where \( B_{11} \), \( B_{12} \), \( B_{21} \), and \( B_{22} \) are submatrices.,Which of the following statements are true?",https://drive.google.com/file/d/1-MyyIp_OKWLNzQFVyQ3HoXMKmjboL7aE/view?usp=drive_link,Medium,Multi correct,The sum \( B_{11} + B_{22} \) is well-defined,The product \( B_{11} \cdot B_{22} \) is well-defined,The determinant of the matrix is equal to the product of the determinants of \( B_{11} \) and \( B_{22} \),"If \( A_{12} \) is the zero matrix, then \( A \) is a square matrix","1,2,3"
+170,21038,"Consider the matrix provided below,where each block is invertible, which of the following statements are true?",https://drive.google.com/file/d/15JPG7eciO088bbiPva1CF7evVTkZEI0B/view?usp=drive_link,Medium,Multi correct,https://drive.google.com/file/d/1_wGYZIEKkKc_5GrYdNllKEU704AQwPcr/view?usp=drive_link,"If \( B_{11} = I \) (identity matrix), then \( B \) is a block upper triangular matrix.",The determinant of \( B \) is equal to the product of the determinants of \( B_{11} \) and \( B_{22} \),"If \( B_{12} = 0 \) (zero matrix), then \( B \) is block diagonal","1,2,3"
+171,21038,Let \( B \) be a partitioned matrix where each block is of size \( m \times m \). Which of the following statements are true?,,Medium,Multi correct,"If \( B_{11} = I \), then \( B \) is invertible.",The product \( B_{12} B_{21}^{-1} B_{21} \) is well-defined.,"If \( B \) is invertible, then \( B_{22} \) is also invertible",The rank of \( B \) is equal to the sum of the ranks of \( B_{11} \) and \( B_{22} \),"1,2,3"
+172,21038,Consider a matrix \( B \) partitioned into blocks where \( B_{11} \) is a square matrix. Which of the following statements are true?,NA,Medium,Multi correct,"If \( B_{11} \) is invertible, then \( B \) is invertible.",The determinant of \( B \) is equal to the product of the determinants of \( B_{11} \) and \( B_{22} - B_{21}B_{12} \).,"If \( B \) is singular, then \( B_{22} - B_{21}B_{12} \) is singular.","If \( B_{12} = 0 \), then the determinant of \( B \) is equal to the determinant of \( B_{11} B_{22} \).","1,2,3"
+173,21038,Let \( B \) be a matrix partitioned as \( B \) where each block is a square matrix. Which of the following statements are true?,,Medium,Multi correct,"If \( B_{12} = B_{21} \), then \( B \) is symmetric.","If \( B \) is symmetric, then \( B_{12} = B_{21} \).",The eigenvalues of \( B \) are the union of the eigenvalues of \( B_{11} \) and \( B_{22} \).,"If \( B \) is diagonal, then \( B_{12} = B_{21} = 0 \).","1,2,3"
+174,21038,Consider a matrix \( P \) that projects vectors onto a subspace \( W \). Which of the following statements are true about the properties of the projection matrix \( P \)?,NA,Medium,Multi correct,\( P^2 = P \),The null space of \( P \) is the orthogonal complement of \( W \).,The rank of \( P \) is equal to the dimension of \( W \).,"If \( P \) is applied twice to any vector, the result is the same as applying \( P \) once","1,2,3,4"
+175,21038,"Let \( A \) be a matrix in \( \mathbb{R}^{3 \times 4} \) with full column rank, and let \( P \) be the projection matrix onto the column space of \( A \). Which of the following statements are true? ",NA,Medium,Multi correct,The null space of \( P \) is the set of all zero vectors.,The rank of \( P \) is equal to the rank of \( A \),The column space of \( P \) is the same as the column space of \( A \),"If \( P \) is applied to any vector, the result lies in the column space of \( A \)","2,3,4"
+176,21038,"Consider a vector \( \mathbf{v} \) and its projection onto subspace \( W \), given by \( \text{proj}_W(\mathbf{v}) \). Which of the following statements are true about the projection vector \( \text{proj}_W(\mathbf{v}) \) and its relationship with \( \mathbf{v} \)?",NA,Medium,Multi correct,The projection vector is orthogonal to \( \mathbf{v} - \text{proj}_W(\mathbf{v}) \).,The magnitude of \( \text{proj}_W(\mathbf{v}) \) is less than or equal to the magnitude of \( \mathbf{v} \),"If \( \mathbf{v} \) is already in \( W \), then \( \text{proj}_W(\mathbf{v}) = \mathbf{v} \)",The projection vector \( \text{proj}_W(\mathbf{v}) \) is in the subspace \( W \),"1,2,3,4"
+177,21168,"Let $Q$ be an orthogonal matrix, and $P = QQ^T$. Which of the following statements are true about the projection matrix $P$ defined in this way?",NA,Easy,Multi correct,$P$ is symmetric.,The eigenvalues of $P$ are all equal to 1.,The rank of $P$ is equal to the rank of $Q$.,"If $P$ is applied to any vector, the result is the same as applying $Q$ once.","1,2,3,4"
+178,21168,"Consider a subspace $U$ spanned by the vectors $u_1, u_2, u_3$, and let $P$ be the projection matrix onto $U$. Which of the following statements are true about the properties of $P$ and its relationship with the subspace $U$?", NA,Easy,Multi correct,The matrix $P$ is idempotent ($P^2 = P$).,The eigenvalues of $P$ are all equal to 1.,The null space of $P$ is the orthogonal complement of $U$.,"If $P$ is applied to any vector in $U$, the result is the same as the original vector.","1,2,3,4"
+179,21168,Consider an orthogonal matrix $Q$ of order $n \times n$. Which of the following statements are true about the properties of $Q$?,NA,Easy,Multi correct,The inverse of $Q$ is equal to its transpose ($Q^{-1} = Q^T$).,The determinant of $Q$ is either $1$ or $-1$.,The columns of $Q$ form an orthonormal set.,"If $Q$ is applied to any vector, the magnitude of the vector is preserved.","1,2,3,4"
+180,21168,"Let $A$ be a matrix in $\mathbb{R}^{n \times n}$, and $Q$ be an orthogonal matrix. Which of the following statements are true about the product $QA$?",NA,Easy,Multi correct,The product $QA$ is also an orthogonal matrix.,The determinant of $QA$ is equal to the determinant of $A$.,The columns of $QA$ form an orthonormal set.,"If $A$ is symmetric, then $QA$ is also symmetric.","1,2,3"
+181,21168,Consider a matrix $R$ that represents a rotation. Which of the following statements are true about the properties of the rotation matrix $R$?,NA,Easy,Multi correct,The inverse of $R$ is equal to its transpose ($R^{-1} = R^T$).,The determinant of $R$ is equal to 1.,The eigenvalues of $R$ are complex conjugates of each other.,"If $R$ is applied to any vector, the magnitude of the vector is preserved.","1,2,4"
+182,21168,Let $V$ be a subspace of $\mathbb{R}^n$ and $Q$ be the orthogonal matrix that projects vectors onto $V$. Which of the following statements are true about the properties of $Q$ and its relationship with the subspace $V$?,NA,Easy,Multi correct,The matrix $Q$ is idempotent ($Q^2 = Q$).,The columns of $Q$ form a basis for $V$.,The null space of $Q$ is the orthogonal complement of $V$.,"If $Q$ is applied to any vector in $V$, the result is the same as the original vector.","1,2,3,4"
+183,21168,Consider two orthogonal matrices $P$ and $Q$ of the same order $n \times n$. Which of the following statements are true about the properties of the product $PQ$?,NA,Easy,Multi correct,The product $PQ$ is also an orthogonal matrix.,The determinant of $PQ$ is equal to the product of the determinants of $P$ and $Q$.,The inverse of $PQ$ is equal to the product of the inverses of $P$ and $Q$.,"If $P$ and $Q$ are both reflections, then $PQ$ is a rotation.","1,2,3"
+184,21168,"Consider vectors $v_1, v_2, v_3$ in $\mathbb{R}^3$. Which of the following statements are true regarding the linear dependence of these vectors?
+",NA,Easy,Multi correct,"If $v_1, v_2, v_3$ are linearly dependent, then at least one of them can be expressed as a linear combination of the others.","If $v_1, v_2, v_3$ are linearly independent, then the only solution to $c_1v_1 + c_2v_2 + c_3v_3 = 0$ is $c_1 = c_2 = c_3 = 0$.","If $v_1, v_2, v_3$ are linearly dependent, then the determinant of the matrix formed by these vectors is equal to zero.","If the vectors form a basis for $\mathbb{R}^3$, they must be linearly independent.
+\end{enumerate}","1,2,3"
+185,21168,"Consider vectors $u, v, w$ in $\mathbb{R}^2$. Which of the following statements are true regarding the linear dependence of these vectors?
+",NA,Easy,Multi correct," If $u, v, w$ are linearly independent, then the only solution to $c_1u + c_2v + c_3w = 0$ is $c_1 = c_2 = c_3 = 0$.","If $u, v, w$ are linearly dependent, then the cross product $u \times v$ is the zero vector.","If $u, v, w$ are linearly dependent, then the vectors lie in the same plane in $\mathbb{R}^3$.","If the vectors form a basis for $\mathbb{R}^2$, they must be linearly independent.
+\end{enumerate}","1,2,3"
+186,21168,"Let $A$ be an $n \times n$ square matrix with column vectors $a_1, a_2, \ldots, a_n$. Which of the following statements are true regarding the linear dependence of these vectors?",NA,Easy,Multi correct,"If the determinant of $A$ is zero, then the vectors $a_1, a_2, \ldots, a_n$ are linearly dependent.","If the vectors are linearly dependent, then at least one of them can be expressed as a linear combination of the others.","If $a_1, a_2, \ldots, a_n$ are linearly independent, then the matrix $A$ is invertible.","If the vectors form a basis for $\mathbb{R}^n$, then the determinant of $A$ is non-zero.","1,2,3,4"
+187,21168,"Consider the vectors $v_1 = \begin{pmatrix}1\\0\\0\end{pmatrix}$, $v_2 = \begin{pmatrix}0\\1\\0\end{pmatrix}$, and $v_3 = \begin{pmatrix}0\\0\\1\end{pmatrix}$. Which of the following statements are true about the linear dependence of these vectors?",NA,Easy,Multi correct,The vectors $v_1$ and $v_2$ are linearly independent.,"The vectors $v_1$, $v_2$, and $v_3$ are linearly dependent.","If $v_1$ and $v_2$ are linearly independent, then $v_3$ can be expressed as a linear combination of $v_1$ and $v_2$.","The vectors $v_1$, $v_2$, and $v_3$ span $\mathbb{R}^3$.","1,2,3"
+188,21168,"Let $u = \begin{pmatrix}1\\2\\3\end{pmatrix}$, $v = \begin{pmatrix}4\\5\\6\end{pmatrix}$, and $w = \begin{pmatrix}7\\8\\9\end{pmatrix}$. Which of the following statements are true about the linear dependence of these vectors?",NA,Easy,Multi correct,"The vectors $u$, $v$, and $w$ are linearly independent.","If $u$, $v$, and $w$ are linearly dependent, then the determinant of the matrix formed by these vectors is zero.","The vectors $u$, $v$, and $w$ span $\mathbb{R}^3$.","If $u$ and $v$ are linearly independent, then $w$ can be expressed as a linear combination of $u$ and $v$.","1,2,4"
+189,21168,Eigenvalues of the given matrix:,https://drive.google.com/file/d/1qykaBTIAptvC16fo28AouRHuFTxhyBE_/view?usp=sharing,Easy,Single correct,"1,1,1","1,1,2","1,4,4","1,2,4",3
+190,21168,Eigenvalues of the system represented by $A = \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1\end{pmatrix}$ are,NA,Easy,Single correct," 0, 0, 0, 0","1, 1, 1, 1","0, 0, 0, -1","1, 0, 0, 0",4
+191,21168,Matrix $A = \begin{pmatrix}1 & 2 \\ 3 & 4\end{pmatrix}$ is not,NA,Easy,Multi correct,orthogonal,non-singular,singular,such that $A^{-1}$ exists,"2,4"
+192,21168,"In the matrix equation $Px = q$, which of the following is a necessary condition for the existence of at least one solution for the unknown vector $x$?",NA,Easy,Single correct,Augmented matrix $[P|q]$ must have the same rank as matrix $P$,Vector $q$ must have only non-zero elements,Matrix $P$ must be singular,Matrix $P$ must be square,1
+193,21168,Eigenvalues of a real symmetric matrix corresponding to different eigenvalues are,NA,Easy,Single correct,orthogonal,non-singular,singular,none of these,1
+194,21168,"An arbitrary vector $X$ is an eigenvector of the matrix $A = \begin{pmatrix}2 & 1 \\ 1 & 2\end{pmatrix}$, if $(a,b)$ is",NA,Easy,Single correct,"(0,0)","(1,1)","(0,1)","(1,2)",2
+195,21168,"The system of equations $a_1x + a_2y = 0$ and $b_1x + b_2y = 0$ where $a_1, a_2, b_1, b_2$ are real numbers, has a non-trivial solution if",NA,Easy,Single correct,$a_1b_1 = a_2b_2$,$a_1b_2 = b_1a_2$,$a_1a_2 = b_1b_2$,none of these,2
+196,21168,Solution of the given matrix equation $Ax = b$ is,https://drive.google.com/file/d/18YquSKFR7FrJG-U41eLdWeh8C59w18ne/view?usp=sharing,Easy,Single correct,"$x_1 = 0, x_2 = 0, x_3 = 0$","$x_1 = 1, x_2 = 1, x_3 = 0$","$x_1 = 0, x_2 = 1, x_3 = 1$","$x_1 = 2, x_2 = -5, x_3 = -1$",1
+197,21168,"If the product of matrices $A$ and $B$ is a null matrix, then $A$ and $B$ differ by an",https://drive.google.com/file/d/17h7tC4KQaUkpQmRrFsLpwJluUKgMKzWw/view?usp=sharing,Easy,Single correct,odd multiple of $\pi$,even multiple of $\pi$,odd multiple of $\pi/2$,even multiple of $\pi/2$,3
+198,21168,Inverse of the matrix,https://drive.google.com/file/d/1YZ6LXQq-PycHuw915c9uytuAr-suL-Il/view?usp=sharing,Easy,Single correct,https://drive.google.com/file/d/1bl50D4rBMvBtItp-DE7Eli4bRYuphba2/view?usp=sharing,https://drive.google.com/file/d/1ANNJrQDhFKndyw0mBXyWKHQuZ5NqPwfs/view?usp=sharing,https://drive.google.com/file/d/1jgGBdZbS8WPGU7EZMPlBg0zlWuBbo7-4/view?usp=sharing,https://drive.google.com/file/d/1bkMXhPxNSiBcBFZP_tqwbVHGtunHsIuu/view?usp=sharing,3

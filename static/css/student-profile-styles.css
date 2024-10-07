@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Grotesk";
+}
+
+body{
+    background-color: #FBFADA;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #FBFADA;
+}
+
+body::-webkit-scrollbar-thumb {
+    cursor: pointer !important;
+    background-color: #ADBC9F;
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #436850
+}
+
+#main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #12372A;
+    color: #ADBC9F;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo{
+    padding: 0px 20px;
+    font-family: "Space Grotesk";
+}
+
+.header-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navigation button{
+    padding: 10px 20px;
+    margin: 0px 10px;
+    background-color: transparent;
+    border: none;
+    color: #ADBC9F;
+    font-size: medium;
+    transition: all 0.15s ease-in-out;
+}
+
+.header-navigation button:last-child{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-navigation button:hover{
+    background-color: rgba(173, 188, 159, 0.2);
+    cursor: pointer;
+}
+
+
+.header-navigation:hover>:not(:hover){
+    opacity: 0.5;
+}
+
+#head{
+    margin: 100px 15% 10px 15%;
+    padding-top: 10px;
+    color: #12372A;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#name{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#head span{
+    font-size: 100px;
+}
+
+#main-container{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#information-table{
+    margin: 20px 0px 100px 0px;
+    border-radius: 10px;
+    background-color: #ADBC9F;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+
+
+th{
+    width: 30%;
+    background-color: #436850;
+    color: #ADBC9F;
+}
+
+td{
+    width: 70%;
+    color: #12372A;
+}
+
+th, td{
+    text-align: left;
+    border-bottom: 1px solid #FBFADA;
+    padding: 15px 25px;
+}
+
+table tr:first-child th{
+    border-top-left-radius: 10px;
+}
+
+table tr:last-child th{
+    border-bottom-left-radius: 10px;
+}

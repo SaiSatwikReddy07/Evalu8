@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Test | Evalu8</title>
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="{{url_for('static', filename='scripts/create-test-scripts.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/create-test-styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/E8-favicon.png') }}">
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <header id="main-header">
+        <h2 class="logo">E8.</h2>
+        <div class="header-navigation">
+            <button onclick="redirect('showFacultyDashboard')">Dashboard</button>
+            <button onclick="redirect('facultyCourses')">Courses</button>
+            <button onclick="redirect('facultyTestHistory')">Tests</button>
+            <button onclick="redirect('facultyProfile')">Profile</button>
+            <button onclick="logout()">Logout <span class="material-symbols-outlined">logout</span></button>
+        </div>
+    </header>
+
+    <div id="test-creation-log">
+        <div id="test-creation-log-core">
+            <p id="log-text"></p>
+            <button onclick="closeLog()">Close</button>
+        </div>
+    </div>
+
+    <div id="warning">
+        <div id="warning-core">
+            <p>Atleast one type of questions is needed to create a test.</p>
+            <button onclick="closeWarning()">Close</button>
+        </div>
+    </div>
+
+    <div id="main-container">
+        <h2 class="welcome-note">
+            Create Test
+        </h2>
+        
+        <div id="create-test-container">
+            <div id="test-details">
+                <input placeholder="Course ID" id="course-id">
+
+                <select name="batches" id="batches" class="custom-select">
+                    <!--
+                    <option value="2021_AIE_A">2021_AIE_A</option>
+                    <option value="2021_AIE_B">2021_AIE_B</option>
+                    <option value="2021_CSE_A">2021_CSE_A</option>
+                    -->
+                </select>
+                
+                <input placeholder="Test Name" id="test-name">
+
+                <label for="test-date"> Test Date :</label>
+                <input type="date" id="test-date">
+
+                <label for="start_time">Start time :</label>
+                <input type="time" id="test-start-time">
+
+                <label for="end_time">End time :</label>
+                <input type="time" id="test-end-time">
+            </div>
+
+            <h2 id="question-requirement-head">
+                <p>Select Questions and Topics</p>
+                <button id="add-questions" onclick="addQuestionRequirement()"><i class="material-symbols-outlined">add</i> Add questions</button>
+            </h2>
+
+            <div id="question-requirements">
+
+                <div class="question-requirement">
+                    <label for="topics">Topic :
+                        <select name="topics" class="topics">
+                            <!--
+                            <option value="LA">LA</option>
+                            <option value="GATE">GATE</option>
+                            <option value="CS Programming">CS Programming</option>
+                            -->
+                        </select>
+                    </label>
+
+                    <label for="subtopics">Sub-topic :
+                        <select name="subtopics" class="subtopics">
+                            <!--
+                            <option value="SVD Coding">SVD Coding</option>
+                            <option value="SVD MCQ">SVD MCQ</option>
+                            <option value="Orthoganility and basis">Orthoganility and basis</option>
+                            -->
+                        </select>
+                    </label>
+
+                    <label for="difficulty">Difficulty :
+                        <select name="difficulty" class="difficulty">
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </label>
+
+                    <label for="number-of-questions">Questions :
+                        <input type="number" placeholder="No. of questions" class="number-of-questions">
+                    </label>
+
+                    <button class="delete-questions" onclick="deleteQuestionRequirement(event)">Delete</button>
+                </div>
+
+            </div>
+
+            
+            
+        </div>
+        <button id="create-test" onclick="retrieveTestData()">Upload Test</button>
+    </div>
+
+</body>
+</html>

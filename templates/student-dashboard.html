@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Student Dashboard | Evalu8</title>
+    
+    <script src="{{url_for('static', filename='scripts/student-dashboard-scripts.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student-dashboard-styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/E8-favicon.png') }}">
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+    
+    <header id="main-header">
+        <h2 class="logo">E8.</h2>
+        <div class="header-navigation">
+            <button onclick="redirect('showStudentDashboard')">Dashboard</button>
+            <button onclick="redirect('studentCourses')">Courses</button>
+            <button onclick="redirect('studentTestHistory')">Tests</button>
+            <button onclick="redirect('studentProfile')">Profile</button>
+            <button onclick="logout()">Logout <span class="material-symbols-outlined">logout</span></button>
+        </div>
+    </header>
+    
+    <h1 class="welcome-note">Welcome back, <span id="student-name"></span></h1>
+
+    <div class="main-container">
+        <div class="activity">
+            <h2 class="activity-head">Dashboard</h2>
+            <div class="activity-tiles" id="activity-tiles">
+
+                <div id="no-tests">
+                    <h3>No tests today.</h3>
+                </div>
+
+                <div id="no-tests-onload">
+                    <h3>No active or upcoming tests at the moment.<h3>
+                </div>
+
+                <!--
+                <div class="tile">
+                    <h1 class="course-code">21AIE113</h1>
+                    <div class="test-details">
+                        <p class="test-name">Introduction to Linear Algebra</p>
+                        <p class="status">Upcoming</p>
+                    </div>
+
+                    <div class="test-times">
+                        <p class="test-date">02/07/2024</p>
+                        <p class="test-time"><i class="material-symbols-outlined" id="timer-icon">timer</i> 60 mins</p>
+                    </div>
+
+                    <button class="take-test">Take test</button>
+                </div>
+                -->
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div id="quote"></div>
+
+            <div class="calender-container">
+                <div class="wrapper">
+                    <header id="calender-header">
+                      <p class="current-date"></p>
+                      <div class="icons">
+                        <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                        <span id="next" class="material-symbols-rounded">chevron_right</span>
+                      </div>
+                    </header>
+                    <div class="calendar">
+                      <ul class="weeks">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                      </ul>
+                      <ul class="days"></ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

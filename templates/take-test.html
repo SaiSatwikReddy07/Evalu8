@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Test | Evalu8</title>
+   
+    <!-- Include KaTeX library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <!-- Optional: KaTeX auto-render extension -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <script src="{{url_for('static', filename='scripts/take-test-scripts.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/take-test-styles.css') }}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/E8-favicon.png') }}">
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="code-under-execution">
+        <div id="code-under-execution-container">
+            <h1>EVALU8</h1>
+            <p>Your code is being executed...</p>
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <header>
+        <h2 class="logo">E8.</h2>
+        <div class="header-navigation">
+            <button onclick="redirect('showStudentDashboard')">Dashboard</button>
+            <button onclick="redirect('studentCourses')">Courses</button>
+            <button onclick="">Tests</button>
+            <button onclick="redirect('studentProfile')">Profile</button>
+            <button onclick="logout()">Logout <span class="material-symbols-outlined">logout</span></button>
+        </div>
+    </header>
+
+    <div id="container">
+
+        <div id="question-numbers">
+            <h2 id="qn-head">Questions</h2>
+            <div id="qn-buttons">
+                
+            </div>
+        </div>
+    
+        <div id="question-tile">
+
+            <div id="timer-container">
+
+                <div id="timer-bar-outer">
+                    <div id="timer-bar-inner"></div>
+                </div>
+
+                <div id="time-left"></div>
+            </div>
+
+            <div id="warning">
+                <div id="warning-note"></div>
+                <button id="close-warning" onclick="closeWarning()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+
+            <div id="all-questions">
+
+            <!--
+                <div id="question-data" class="question-data">
+                    <div id="question-number-head">Question <span id="question-number">0</span> </div>
+
+                    <div class="question">
+                        Who is the CEO of India ?
+                    </div>
+
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="option-1" name="options">
+                            <label for="option-1">Superstar Rajanikanth</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="radio" id="option-2" name="options">
+                            <label for="option-2">Ulaganayagan</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="radio" id="option-3" name="options">
+                            <label for="option-3">Rocky bhai</label>
+                        </div>
+
+                        <div class="option">
+                            <input type="radio" id="option-4" name="options">
+                            <label for="option-4">Sarra sarra soolamm</label>
+                        </div>
+                    </div>
+
+                    <div id="replace-options">
+                        <div id="e8-code-container">
+                            <p id="code-editor-head">Evalu8 Code Editor &lt;/&gt;<span id="code-language"></span></p>
+                    
+                            <div id="evalu8-code-editor">
+                                <div class="code-row">
+                                    <p class="code-row-number"></p>
+                                    <p class="code-row-text"></p>
+                                </div>
+                            </div>
+                    
+                            <div id="code-button-row">
+                                <button>Run</button>
+                                <button>Reset</button>
+                            </div>
+                        </div>
+
+                        <div class="logs-and-desc">
+                            <div class="logs" id="code-logs-${code_questions.indexOf(question) + 1}"></div>
+                            <div class="desc" id="code-desc-${code_questions.indexOf(question) + 1}" contenteditable='true' placeholder="Explain the logic of your program here..."></div>
+                        </div>
+                    </div>
+
+                    <div class="test-buttons">
+                        <button id="previous-from-q0" class="previous"><i class="fa-solid fa-chevron-left"></i>Previous</button>
+                        <button id="save-q0" class="save">Save</button>
+                        <button id="next-from-q0" class="next">Next<i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            -->
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

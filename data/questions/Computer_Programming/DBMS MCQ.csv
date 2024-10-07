@@ -1,0 +1,351 @@
+question_number,faculty_id,question_text,image_link_if_any_in_question,difficulty_tag,question_type,option_1,option_2,option_3,option_4,correct_answer
+,,,,,,,,,,
+1,21038,Which data type should be used in a data warehouse to store dates?,NA,Easy,Single correct,VARCHAR (10),CHAR(8),DATE,INT,3
+2,21038,What is the advantage of using a DECIMAL data type for storing currency values in a data warehouse?,NA,Easy,Single correct,Higher precision than FLOAT,Represents values in cents, Can store negative balances,Easier to convert to INT,1
+3,21038,"How is a “dimension"" different from a “fact"" table in a data warehouse?",NA,Easy,Single correct,"Dimensions store detailed attributes, facts store aggregated data.","Dimensions contain historical data, facts contain current data.","Dimensions are always smaller than fact tables, facts are always larger.","Dimensions are updated more frequently, facts are updated less frequently.",1
+4,21038,What is the purpose of using surrogate keys in a data warehouse?,NA,Easy,Single correct,To enforce data integrity,To improve query performance,To reduce storage space,To simplify data extraction,2
+5,21038, How does a CHAR data type differ from a VARCHAR data type in a data warehouse?,NA,Easy,Single correct,"CHAR always uses fixed padding, VARCHAR uses dynamic padding","CHAR can store longer values, VARCHAR can store shorter values.","CHAR is always faster to access, VARCHAR is always slower to access","CHAR is preferred for descriptive attributes, VARCHAR is preferred for numeric values",1
+6,21038,Which data type is most suitable for storing customer names in a data warehouse?,NA,Easy,Single correct,VARCHAR (50),NVARCHAR (100),CHAR(255),TEXT,1
+7,21038,What is the potential drawback of using an ENUM data type in a data warehouse?,NA,Easy,Single correct, Requires frequent schema changes for new values.,Can be inefficient for storing large lists of possible values,Increases data redundancy across tables,Limits data analysis flexibility,1
+8,21038,How can data types be used to enforce data quality rules in a data warehouse?,NA,Easy,Single correct,By setting minimum and maximum values for numeric types,By defining valid characters for string types,By specifying foreign key constraints between tables.,All of the above,4
+9,21038,"What is the difference between a ""byte"" and a ""character"" in data warehousing contexts?",NA,Easy,Single correct,"Abyte stores 8 bits, a character stores 16 bit","A byte represents a single numeric value,a character represents a textual symbol"," A byte is a unit of storage, a character is a unit of data type",There is no significant difference in data warehouse applications.,3
+10,21038,Which data type should be used in a data warehouse to store geographic coordinates?,NA,Easy,Single correct,VARCHAR(50) ,GEOMETRY, FLOAT,INT,2
+11,21038,What is the benefit of using a user-defined data type (UDT) in a data warehouse?,NA,Easy,Single correct,Encapsulate complex data structures for improved reusability, Enhance query performance by optimizing storage for specific data,Simplify data extraction from source systems with pre-defined formats,Facilitate data encryption and security for sensitive information,1
+12,21038,How can the precision and scale of a DECIMAL data type be determined in a data warehouse?,NA,Easy,Single correct,By inspecting the schema definition of the table,By analyzing the data loaded into the column, By querying database metadata tables,All of the above,4
+13,21038,what considerations should be taken when choosing data types for large-volume data in a warehouse?,NA,Easy,Single correct,Balance storage efficiency with processing performance.,Prioritize data accuracy over flexibility to avoid errors,Choose fixed-length data types for faster joins and aggregation,Avoid using complex data types to simplify data extraction,1
+14,21038,How can data types be used to implement data partitioning in a data warehouse?,NA,Easy,Single correct,By designating specific columns as partitioning keys,By dividing tables based on data ranges or values,By storing different data types in separate physical file,All of the above,2
+15,21038,What potential issue can arise from using VARCHAR data types with varying lengths in a data warehouse?,NA,Easy,Single correct,Increased storage footprint due to padding and wasted space,Inefficient joins and aggregations due to inconsistent data sizes,Difficulty in applying data quality rules and validations,All of the above,4
+16,21038,What is the role of data compression in choosing data types for a data warehouse?,NA,Easy,Single correct,Compressed data types always offer smaller storage footprints.,Choosing appropriate data types can improve compression effectiveness.,Data compression should only be used on large textual data.,Data types cannot directly influence Compression ratio,2
+17,21038,How can data types be used to track changes in data values over time in a data warehouse?,NA,Easy,Single correct,By defining separate columns for current and historical values,By implementing versioning techniques with different data types,By utilizing temporal data types built for historical tracking,All of the above,3
+18,21038,What is the significance of data type conversions in data warehousing ETL processes?,NA,Easy,Single correct,Ensuring data compatibility between source and target systems,Performing calculations and aggregations on consistent data formats.,Optimizing storage space by converting to smaller data types.,All of the above,4
+19,21038,What is the primary goal of data transformation in a data warehouse?,NA,Easy,Single correct,Cleanse and integrate data from multiple sources,Reduce storage footprint and optimize disk space,Conform data to the target schema for efficient queries,All of the above,4
+20,21038,What is the main benefit of normalizing data in a data warehouse?,NA,Easy,Single correct,Reduces data redundancy and minimizes storage requirements,Simplifies data manipulation and reduces update anomalies,Improves data retrieval speeds for complex queries,All of the above,4
+21,21038,Which normal form eliminates repeating groups in data?,NA,Easy,Single correct,First Normal Form (1NF),Second Normal Form (2NF),Third Normal Form (3NF), Boyce-Codd Normal Form (BCNF),3
+22,21038,What is the trade-off between a high degree of normalization and query performance in a data warehouse?,NA,Easy,Single correct,Highly normalized data reduces storage but increases join complexity and slows down queries.,Denormalized data increases storage but simplifies joins and improves query performance,Both normalization and denormalization negatively impact query performance, There is no trade-off; normalization always improves query performance,1
+23,21038,What technique can be used to denormalize data in a data warehouse for performance optimization?,NA,Easy,Single correct,Data aggregation, Dimension flattening,Star schema creation,All of  the above,2
+24,21038, What is the role of data cleansing in the data transformation process for a data warehouse?,NA,Easy,Single correct, Identifies and corrects inconsistencies and errors in raw data,Transforms data formats and units to a consistent standard,Integrates data from multiple sources into a single schema,All of  the above,4
+25,21038,What tool can be used to automate data transformation processes in a data warehouse?,NA,Easy,Single correct,"ETL (Extract, Transform, Load tools)",Data mining algorithms,Relational databases,Data visualization software,1
+26,21038,How can surrogate keys be used to handle dimension changes in a data warehouse?,NA,Easy,Single correct,Maintain separate historical records for each dimension value change,Update existing records with new values while keeping track of changes,Use slowly changing dimensions (SCDs) with different update strategies.,All of the above,3
+27,21038,What is the impact of data transformation on data quality in a data warehouse?,NA,Easy,Single correct,Data transformation can introduce errors and inconsistencies during processing,Properly implemented transformations can significantly improve data quality and reliability,Both positive and negative impacts are possible depending on the specific transformations applied,All of the above,4
+28,21038,"In a data warehouse, what is the primary purpose of a fact table?",NA,Easy,Single correct,Store metadata,Store dimensions,Store transactional data,Store summary data,3
+29,21038, What is a surrogate key in the context of data warehousing?,NA,Easy,Single correct,Primary key of a dimension table,Temporary key for sorting data, Key used to encrypt sensitive information,Key generated by the data warehouse system,4
+30,21038,What is OLAP (Online Analytical Processing) used for in a data warehouse?,NA,Easy,Single correct,Data extraction ,Data transformation,Data analysis ,Data loading,3
+31,21038,What is the purpose of a star schema in a data warehouse?,NA,Easy,Single correct,Normalize data,Simplify queries,Store historical data,Support real-time processing,2
+32,21038, Which of the following is a characteristic of a data warehouse?,NA,Easy,Single correct,Real-time data updates,Operational data storage,Granular data,Transaction processing,3
+33,21038,What is the primary purpose of a star schema in a data warehouse?,NA,Easy,Single correct,Normalize data,Simplify queries,Store transactional data,Support real-time processing,2
+34,21038," In a data warehouse, what role does a snowflake schema play?",NA,Easy,Single correct,Optimizing data loading,Normalizing data,Reducing query performance,Handling real-time data,2
+35,21038,Which term refers to the process of transforming data from operational databases into the data warehouse format?,NA,Easy,Single correct,Data extraction,Data normalization,Data de-normalization,Data aggregation,1
+36,21038,What is the purpose of OLAP (Online Analytical Processing) in a data warehouse?,NA,Easy,Single correct,Data extraction, Data analysis,Data transformation,Data loading,3
+37,21038, Which of the following is a characteristic of a data warehouse?,NA,Easy,Single correct,Real-time data updates,Operational data storage,Granular data,Transaction processing,3
+38,21038,What is a surrogate key in the context of data warehousing?,NA,Easy,Single correct,Primary key of a dimension table,Temporary key for sorting data, Key used to encrypt sensitive information,Key generated by the data warehouse system,4
+39,21038," In a data warehouse, what does the term 'star join' refer to?",NA,Easy,Single correct,Joining fact tables,Joining dimension tables,Joining tables using a star schema,Joining tables using a snowflake schema,3
+40,21038,What is the role of an ETL tool in data warehousing?,NA,Easy,Single correct,"Extract, Transfer, Load","Encrypt, Transform, Load","Extract, Transform, Load","Execute, Transfer, Log",3
+41,21038,What is the purpose of a slowly changing dimension (SCD) in data warehousing?,NA,Easy,Single correct,To store historical data,To optimize data loading,To speed up query performance,To handle real-time data,1
+42,21038,What is the main goal of data warehousing?,NA,Easy,Single correct,Real-time data processing,Transactional data storage,Analytical data processing,Reducing data redundancy,3
+43,21038,What is the purpose of a data mart in a data warehousing environment?,NA,Easy,Single correct, Centralized data storage,Storing raw data,Storing summarized data, Focusing on specific business areas,4
+44,21038,What does the term 'star join optimization' refer to in data warehousing?,NA,Easy,Single correct,Optimizing star schema design,Optimizing query performance in star schema joins,Normalizing data in a star schema,Optimizing loading processes   ,2
+45,21038,Which process involves organizing data into a format suitable for analysis in a data warehouse?,NA,Easy,Single correct, Data loading,Data modeling,Data transformation,Data extraction,3
+46,21038,What is the purpose of a data warehouse bus architecture?,NA,Easy,Single correct,Supporting real-time data processing,Simplifying data loading processes,Integrating multiple data marts,Normalizing dimension tables,3
+47,21038,Which of the following is a benefit of using a de-normalized data model in a data warehouse?,NA,Easy,Single correct,Reduced storage space,Improved query performance,Enhanced data integrity, Simplified ETL processes,2
+48,21038,What is the primary focus of a multidimensional data model in data warehousing?,NA,Easy,Single correct,Representing detailed transactional data and operational processes,Organizing data around specific subjects and business processes for analysis,Optimizing database performance for large-scale data processing,Enforcing data integrity and consistency across different sources,2
+49,21038,Which type of schema is most widely used for multidimensional data modeling?,NA,Easy,Single correct,Star schema,Snowflake schema,Fact constellation schema,Entity-relationship model,1
+50,21038,What is the main advantage of using a snowflake schema compared to a star schema?,NA,Easy,Single correct,Improved query performance for complex cross-dimensional analysis,Reduced data redundancy and smaller storage requirements,Simplified joins and faster performance for basic aggregations,Enhanced flexibility for accommodating future data expansion,1
+51,21038,How can fact less fact tables be effectively utilized in multidimensional data models?,NA,Easy,Single correct,By storing detailed transaction data for Operational analvsis,By holding aggregated measures without any associated dimension attributes,By acting as bridge tables between dimension and fact tables,By providing metadata about the data model itself,2
+52,21038,What are some key considerations when designing dimension tables in a multidimensional data model?,NA,Easy,Single correct,Defining appropriate levels of granularity for analysis,Selecting relevant attributes that support business needs,Ensuring consistency and con formed dimensions across the model,All of the above,4
+53,21038,How can data denormalization be strategically employed in multidimensional data models?,NA,Easy,Single correct,By introducing redundanciesthat eliminate costly joins,By increasing the complexity of the data model,By reducing the overall size of the data warehouse,By normalizing dimension tables to their highest form,1
+54,21038,What are some best practices for managing data quality in multidimensional data models?,NA,Easy,Single correct,Implement data validation rules and cleansing routines, Monitor data lineage and track changes to the mode,Test and validate queries for accuracy and performance,All of the above,4
+55,21038,What are some potential challenges associated with implementing and maintaining,NA,Easy,Single correct, Increased query complexity for advanced analysis,Difficulty in accommodating schema changes and data expansions,Higher technical skills required for model design and implementation,All of the above,4
+56,21038,What is the primary goal of data normalization in a data warehouse?,NA,Easy,Single correct,Increase data redundancy,Optimize query performance,Simplify data loading,Support real-time processing,2
+57,21038,"In the context of data warehousing, what does the term First Normal Form (1NF)' imply?",NA,Easy,Single correct,No repeating groups, No duplicate records,No null values,No data redundancy,1
+58,21038,Which normalization form deals with partial dependency in a table?,NA,Easy,Single correct,Third Normal Form (3NF),Boyce-Codd Normal Form (BCNF),Second Normal Form (2NF),Fourth Normal Form (4NF),1
+59,21038, What is a determinant in the context of normalization?,NA,Easy,Single correct,An attribute that uniquely determines another attribute,A non-key attribute,A composite keyA composite key,A repeating group of data,1
+60,21038,"In the normalization process, what does the term transitive dependency' refer to?",NA,Easy,Single correct,Dependency between two non-prime attributes,Dependency between two primary key attributes,Dependency between two foreign key attributes,Indirect dependency between two attributes through a third attribute,4
+61,21038,What is normalization in the context of data warehousing?,NA,Easy,Single correct,Reducing redundancy in data,Increasing redundancy in data,Ignoring data consistency,Maximizing data duplication,1
+62,21038,Which normalization form ensures that there are no partial dependencies?,NA,Easy,Single correct,irst Normal Form (INF),Second Normal Form (2NF),Third Normal Form (3NF),Boyce-Codd Normal Form (BCNF),3
+63,21038, In which normalization form is a composite primary key allowed? ,NA,Easy,Single correct,irst Normal Form (INF),Second Normal Form (2NF),Third Normal Form (3NF),Boyce-Codd Normal Form (BCNF),2
+64,21038,What is the purpose of Boyce-Codd Normal Form(BCNF)?,NA,Easy,Single correct,Eliminating transitive dependencies,Eliminating partial dependencies,Eliminating redundant data,Eliminating composite keys,1
+65,21038, Which normalization form allows for a multi valued dependency?,NA,Easy,Single correct,Second Normal Form (2NF),Third Normal Form (3NF), Fourth Normal Form (4NF),Fifth Normal Form (5NF),3
+66,21038,What is a disadvantage of excessive normalization in data warehousing?,NA,Easy,Single correct,Improved data integrity,Increased redundancy,Better performance,Simplified data model,2
+67,21038,Which normalization form eliminates transitive dependencies and is a stricter version of 3NF?,NA,Easy,Single correct,Fourth Normal Form (4NF),Fifth Normal Form (5NF),Boyce-Codd Normal Form (BCNF),Sixth Normal Form (6NF),3
+68,21038,What is denormalization in data warehousing?,NA,Easy,Single correct,Increasing redundancy for performance,Reducing data consistency,Ignoring data integrity,Normalizing data to the highest degree,1
+69,21038, Which normalization form is considered the highest level of normalization?,NA,Easy,Single correct,Fifth Normal Form (5NF),Sixth Normal Form (6NF),Fourth Normal Form (4NF),Domain-Key Normal Form (DKNF),2
+70,21038, When might denormalization be a suitable Strategy in data warehousing?,NA,Easy,Single correct,For OLAP systems, For OLTP systems,For highlynormalized databases,For systems with minimal data redundancy,1
+71,21038,What is discretization in the context of numerical methods?,NA,Easy,Single correct,The process of making continuous data discrete,The process of converting discrete data into continuous,The process of data compression,The process of optimizing numerical algorithms,1
+72,21038,"In signal processing, what is the purpose of discretizing a continuous signal?",NA,Easy,Single correct,To increase signal clarity, To reduce computational complexity,To optimize storage space,To minimize signal distortion,2
+73,21038,Which method is commonly used for discretizing differential equations in numerical analysis?,NA,Easy,Single correct,Finite element method,Fourier transform,Runge-Kutta method,Laplace transform,3
+74,21038,What is the significance of the Nyquist-Shannon sampling theorem in discretization?,NA,Easy,Single correct, It defines the minimum sampling rate needed to avoid aliasing,It determines the maximum amplitude of a signal,It sets the minimum precision for numerical computations,It establishes the sampling frequency for analog-to-digital conversion,1
+75,21038,"In finite difference methods, what does the term ""stencil"" refer to?",NA,Easy,Single correct,A visual representation of discretized data,A set of neighboring points used for approximating derivatives,The process of quantizing continuous signals,A mathematical formula for discrete integration,2
+76,21038, What is the primary motivation for discretizing continuous data?,NA,Easy,Single correct,Reduce storage requirements and simplify data representation,Facilitate faster processing and improve computational efficiency.,Enable the use ofdistance-based algorithms for data analysis., All of the above.,4
+77,21038,Which methods are commonly used for data discretization?,NA,Easy,Single correct,Equal width binning. equal frequency binning. k-means clustering,"Entropy-based binning, decision tree algorithms, chi-squared discretization",Both A and B,None of the above.,3
+78,21038,What are the potential drawbacks of using a small number of bins for discretization?,NA,Easy,Single correct,"Loss of information and granularity, masking underlying patterns",Increased variance and reduced accuracy of analysis models,Computational inefficiencies and slower processing times,All of the above.,1
+79,21038,How can the optimal number of bins for discretization be determined?,NA,Easy,Single correct,Manually tuning based on domain knowledge and expected patterns,Using statistical methods like the elbow method or silhouette analysis, Relying on the inherent logic of the chosen discretization method,A combination of B and C,4
+80,21038,What is the impact of discretization on the application of distance-based algorithms like k-nearest neighbors?,NA,Easy,Single correct,Distances become more accurate due to discrete levels,Distances might be distorted based on chosen bin boundaries,Computation cost might decrease due to simplified comparisons,All of the above,4
+81,21038,How can entropy-based discretization be used to optimize information gain when discretizing data?,NA,Easy,Single correct,By maximizing the difference in entropy between resulting bins,By minimizing the overall entropy within the entire discretized dataset,By balancing the trade-off between entropy reduction and bin size,All of the above,4
+82,21038,"What is the concept of ""minimum description length"" in the context of discretization?",NA,Easy,Single correct,A measure of the trade-off between data compression and model complexity,A method for automatically determining the optimal number of bins,A criterion discretization for evaluating methods. the quality of different,All of the above,4
+83,21038,How can supervised discretization technigues incorporate information from the target variable for data preparation?,NA,Easy,Single correct,By directly using the target variable values to define bin boundaries,By optimizing the discretization to maximize the correlation between bins and the target variable,By utilizing supervised learning algorithms like decision trees to partition the data,All of the above,4
+84,21038, What are the limitations of supervised discretization compared to unsupervised methods?,NA,Easy,Single correct,Over-fitting to the specific target variable might not generalize well to other tasks,Requires prior knowledge or assumptions about the relationship between features and the target.,Can be computationally more expensive than unsupervised methods,All of the above,4
+85,21038, How can discretization be used to address the curse of dimensionality in data analysis?,NA,Easy,Single correct,By reducing the number of features and simplifying the input space,By facilitating the application of distance based algorithms in high-dimensional data,By improving the interpretability of models built on discretized data,All of the above,4
+86,21038,Which of the following measures is not distributive?,NA,Easy,Single correct,Number of customers,Sum of order values,Average order value,Count of distinct products,3
+87,21038,What is the main advantage of pre-aggregating measures in a data warehouse?,NA,Easy,Single correct,Improved query  performance due to fast retrieval of pre-calculated values,Reduced storage requirements by eliminating redundant calculations,Increased  flexibility for analysing data at different granularities,Enhanced data accuracy . by minimizing rounding errors during calculations,1
+88,21038,Which type of measure must be calculated on the entire dataset without decomposition?,NA,Easy,Single correct,Standard deviation,Maximum value,Percentile,Average order value,3
+89,21038,In what scenario would you consider using a user-defined function (UDF) for calculating a measure?,NA,Easy,Single correct,When a complex custom calculation is needed beyond built-in functions,To improve query performance for frequently used measures,To simplify data cleansing and pre-processing steps,To ensure compatibility with other data tools and analytics platforms,1
+90,21038,How can the level of granularity for a measure impact data analysis?,NA,Easy,Single correct,Analyzing data at a finer level provides more detailed insights but might obscure broader trends.,Choosing acoarser granularity improves query performance but reduces the resolution of analysis.,Both A and B,The granularity level has no significant impact on data analysis.,3
+91,21038,What is sampling in warehousing?,NA,Easy,Single correct,The granularity level has no significant impact on data analysis.,Counting all items in the warehouse,Organizing items alphabetically,Rearranging the layout of the warehouse,1
+92,21038,What is the primary purpose of sampling in warehousing?,NA,Easy,Single correct,Maximizing warehouse space,Minimizing inventory turnover,Efficient order fulfillment,Quality control and assurance,4
+93,21038,Which sampling method involves selecting every nth item from a list?,NA,Easy,Single correct,Simple random sampling,Systematic sampling,Stratified sampling,Cluster sampling,2
+94,21038,"In warehousing, what does the term ""stratified sampling"" refer to?",NA,Easy,Single correct,Selecting items randomly without a pattern,Dividing the inventory into subgroups and sampling from each subgroup,Sampling only the items near the entrance,Sampling the most valuable items,2
+95,21038,Which factor is important when determining the sample size in warehousing?,NA,Easy,Single correct,The total number of items in the warehouse,The average weight of items,The warehouse temperature,The color of the items,1
+96,21038,What is the advantage of using random sampling in warehousing?,NA,Easy,Single correct, It is easy to implement,It ensures representation of all items,It requires less time,It focuses on specific categories,2
+97,21038,"What does 'sampling error"" refer to in warehousing?",NA,Easy,Single correct,Errors in the sampling process,Errors in the warehouse layout,Errors in inventory tracking,Errors in item labelling,1
+98,21038,Which type of sampling is suitable for items with varying levels of importance or value?,NA,Easy,Single correct,Simple random sampling,Systematic sampling,Stratified sampling,Cluster sampling,3
+99,21038,What is the purpose of cluster sampling in warehousing?,NA,Easy,Single correct,To sample only from specific clusters of item,To sample items in a clustered storage layout,To sample from randomly selected clusters of items,To sample items in a linear fashion,3
+100,21038,How does stratified sampling differ from cluster sampling in warehousing,NA,Easy,Single correct,Stratified sampling involves random selection of entire clusters,Cluster sampling involves dividing the inventory into subgroups.,Sratified sampling involves sampling entire subgroups,Cluster sampling involves sampling proportionally from each subgroup.,3
+101,21038,What is the purpose of Gate Level Sampling in warehousing?,NA,Easy,Single correct,To monitor security at the warehouse entrance,To collect data on employee attendance,To inspect the quality of incoming and outgoing goods,To control the temperature inside the warehouse,3
+102,21038,When is Gate Level Sampling typically performed in the warehousing process?,NA,Easy,Single correct,After goods are stored in the warehouse,During the transportation of goods,Before goods enter or exit the warehouse,At random times during the day,3
+103,21038,What is the main advantage of Gate Level Sampling over other sampling techniques?,NA,Easy,Single correct,Lower cost, Faster implementation, Immediate feedback on quality,Greater accuracy,3
+104,21038,Which factor is crucial for the success of Gate Level Sampling in warehousing?,NA,Easy,Single correct,The size of the warehouse,The speed of transportation vehicles,The reliability of sampling equipment,The cooperation of warehouse staff,4
+105,21038,"What does the term ""sampling frequency"" refer to in Gate Level Sampling?",NA,Easy,Single correct,The number of goods sampled per hour,The duration of each sampling session,The accuracy of the sampling equipment,The frequency of gate inspections,1
+106,21038,"In Gate Level Sampling, what does the term ""acceptance sampling"" mean?",NA,Easy,Single correct,Sampling goods that are accepted by the warehouse ,Sampling a percentage of goods for inspection,Accepting all goods without sampling,Rejecting sampled goods,2
+107,21038,What is the role of a Gate Level Sampling plan in warehousing?,NA,Easy,Single correct,To determine the layout of the warehouse gate,To establish sampling procedures and criteria,To calculate the overall warehouse capacity,To organize transportation routes,2
+108,21038,Which of the following statements about Gate Level Sampling is true?,NA,Easy,Single correct,It is only applicable to outgoing goods.,It is primarily focused on employee behaviour.,It provides a snapshot of the overall warehouse inventory,It allows for real-time quality assessment of goods.,4
+109,21038,How does Gate Level Sampling contribute to inventory management in warehousing?,NA,Easy,Single correct,It reduces the need for warehouse staff, It minimizes the time required for goods transportation.,It helps identify and address quality issues promptly,t determines the optimal layout of the warehouse.,3
+110,21038,What is the primary challenge associated with Gate Level Sampling in warehousing?,NA,Easy,Single correct,Inability to sample goods in real-time,Potential delays in the transportation process,Difficulty in ensuring a representative sample,Lack of support from warehouse staff,3
+111,21038,What is the primary objective of the Gate Level Sampling process in warehousing?,NA,Easy,Single correct,To monitor employee activities, To track the movement of goods,To ensure timely deliveries,To assess the quality of incoming and outgoing goods,4
+112,21038,When is Gate Level Sampling typically conducted in the warehousing workflow?,NA,Easy,Single correct,After goods are stored in the warehouse, During the picking process, Before goods enter or exit the warehouse,At the end of the transportation route,3
+113,21038,What role does technology play in the gate level sampling process?,NA,Easy,Single correct,Tracking employee attendance,automating quality inspections,monitoring warehouse temperature,determining transportation routes,4
+114,21038," In gate level sampling, what is the purpose of a sampling plan?",NA,Easy,Single correct,to determine the warehouse layout,to decide on employee shifts, to establish sampling procedures and criteria,to organize inventory by product category,3
+115,21038,what is the significance of the acceptance sampling technique in gate level sampling?,NA,Easy,Single correct,sampling goods that are accepted by the warehouse,Sampling a percentage goods of goods  for inspection,Rejecting sampled goods,sampling rejected sampled goods,2
+116,21038,How does Gate Level Sampling contribute to the overall efficiency of warehousing operations?,NA,Easy,Single correct,By reducing warehouse space, By minimizing employee workloads,By ensuring rapid goods transportation,By providing real-time quality assessment,4
+117,21038,What challenges might arise during the Gate Level Sampling process in warehousing?,NA,Easy,Single correct,Difficulty in determining transportation routes,Inability to sample goods in real-time,Lack of technology to track goods,Excessive reliance on employee input,2
+118,21038,How does Gate Level Sampling impact inventory management in warehousing?,NA,Easy,Single correct,By reducing the need for warehouse staff,By minimizing the time required for goods transportation, By identifying and addressing quality issues promptly,By optimizing the layout of the warehouse,3
+119,21038,What is the role of warehouse staff in the Gate Level Sampling process?,NA,Easy,Single correct,To manually inspect every item,To monitor the temperature inside thewarehouse,To determine transportation route,To provide technology support for sampling,1
+120,21038,How can Gate Level Sampling help in maintaining customer satisfaction?,NA,Easy,Single correct,By reducing the warehouse siz, By minimizing transportation delays,By ensuring a quick employee attendance process,By delivering high-quality goods to customers,4
+121,21038,What is the primary purpose of data transformation in warehousing?,NA,Easy,Single correct,To monitor employee activities,To improve data quality,To optimize warehouse layout,To track transportation routes,2
+122,21038,"In the context of warehousing, what does “data transformation"" refer to?",NA,Easy,Single correct,Changing the physical layout of the warehouse,Converting data from one format to another,Rearranging the order of inventory items,Adjusting the lighting conditions in the warehouse,2
+123,21038,How does data transformation contribute to the efficiency of warehousing operations?,NA,Easy,Single correct,Changing the physical layout of the warehouse,Converting data from one format to another,Rearranging the order of inventory items,Adjusting the lighting conditions in the warehouse,2
+124,21038,Which of the following is a common goal of data transformation in warehousing?,NA,Easy,Single correct,By reducing the size of the warehouse,By minimizing employee workloads,By optimizing transportation routes,By ensuring accurate and consistent data for analysis,4
+125,21038,What in the data transformation process in warehousing?,NA,,,Maximizing inventory turnover,Minimizing warehouse temperature,Enhancing data security,,4
+126,21001,"In data warehousing, what is a ""measure"" primarily used for?",NA,Easy,Single correct,To categorize data,To filter data,To perform calculations,"To create metadata
+",3
+127,21001,Which of the following is an example of a measure in a sales data warehouse?,NA,Easy,Single correct,Customer Name,Order Date,Quantity Sold,Product Category,3
+128,21001,What is the role of a measure in the context of a data cube in data warehousing?,NA,Easy,Single correct,To define hierarchies,To represent dimensions,To provide context,To quantify data,4
+129,21001,"In data warehousing, what is the term for the process of aggregating measures over dimensions?",NA,Easy,Single correct,Normalization,Denormalization,Drill-down,Roll-up,4
+130,21001,Which of the following is an example of an aggregate measure in data warehousing?,NA,Easy,Single correct,Sales Amount,Product Name,Employee ID,Customer Address,1
+131,21001,"In a data warehouse, what is the purpose of a dimension?",NA,Easy,Single correct,To perform calculations,To categorize data,To represent measures, To create metadata,2
+132,21001,Which computation operation involves increasing the granularity of data in a data warehouse?,NA,Easy,Single correct,Roll-up,Drill-down,Slice,Dice,2
+133,21001,"What is the purpose of a ""star schema"" in a data warehouse?
+",NA,Easy,Single correct,To represent hierarchies,To link measures to dimensions,To perform data encryption,To filter data,2
+134,21001,Which computation operation involves selecting a subset of data along one dimension in a data cube?,NA,Easy,Single correct,Roll-up,Drill-down,Slice,Dice,3
+135,21001,"In data warehousing, what is the purpose of ""fact tables""?",NA,Easy,Single correct,To represent dimensions,To define hierarchies, To store measures,To provide context,3
+136,21001,Which of the following is an example of a semiadditive measure in data warehousing?,NA,Easy,Single correct,Quantity Sold,Average Temperature,Employee ID,Product Category,2
+137,21001,What is data compression in the context of warehousing?,NA,Easy,Single correct,Reducing the size of the warehouse,Reducing the number of products in the warehouse,Reducing the amount of data to be stored,Increasing the storage capacity of the warehouse,3
+138,21001,Which compression algorithm is commonly used in warehousing for reducing redundancy in data?,NA,Medium,Single correct,Huffman coding,Run-Length Encoding (RLE),Lempel-Ziv-Welch (LZW),Burrows-Wheeler Transform (BWT),2
+139,21001,What is the primary advantage of using lossless compression in warehousing?,NA,Medium,Single correct,Higher compression ratios,Preservation of data integrity,Faster compression speed,Smaller storage requirements,2
+140,21001,"In the context of data warehousing, what does the term 'dictionary-based compression' refer to?
+",NA,Medium,Single correct,Compressing data using a predefined dictionary,Storing compressed data in a dictionary format,Utilizing a dictionary to store unique values,Using a dictionary for sorting data in the warehouse,3
+141,21001,Which type of data is most suitable for run-length encoding in warehousing?,NA,Medium,Single correct,Randomly distributed data,Sequentially repeating data,Text-based data,Image data,2
+142,21001,How does compression impact query performance in a data warehouse?,NA,Medium,Single correct,Improves query performance,Has no effect on query performance,Slows down query performance,Randomly affects query performance,1
+143,21001,Which of the following is a challenge associated with lossy compression in data warehousing?,NA,Medium,Single correct,Increased storage requirements,Reduced query performance,Loss of data fidelity,Limited compression ratios,3
+144,21001,Which data warehouse component benefits most from efficient data compression?,NA,Medium,Single correct,Fact table,Dimension table,Staging area,Data mart,1
+145,21001,What is the primary drawback of using lossless data compression in data warehouses?,NA,Medium,Single correct,Increased processing overhead,Potential loss of data accuracy,Reduced storage efficiency,Limited support for different data types,1
+146,21001,"Which data compression technique is best suited for handling dimension tables with low cardinality?
+",NA,Medium,Single correct,Dictionary encoding,Run-length encoding,Huffman coding,Lempel-Ziv coding,1
+147,21001,What benefits does columnar storage offer in conjunction with data compression in data warehouses?,NA,Medium,Single correct,Improved compression ratios for specific data types,Faster data loading and transformation,Increased CPU utilization during queries,Reduced disk space fragmentation,1
+148,21001,"How can data compression impact the performance of ad-hoc queries in a data warehouse?
+",NA,Medium,Single correct,Always improve query performance due to reduced storage size,Potentially slow down certain queries due to decompression overhead,Have no significant impact on query performance,Significantly increase the complexity of query optimization,2
+149,21001,Which data compression tool is specifically designed for efficient compression of large data in data warehouses?,NA,Medium,Single correct,gzip,bzip2,KZMA,Snappy,4
+150,21001,What is the main advantage of using hybrid data compression techniques in data warehouses?,NA,Medium,Single correct,Achieve near-optimal compression ratios for all data types ,Reduce the processing overhead associated with decompression ,Offer flexibility to apply different compression methods to different data segments,Simplify data management tasks,3
+151,21001,"What factors should be considered when choosing a data compression technique for a data warehouse?
+",NA,Medium,Single correct,Compression ratio only, Data types within the data warehouse,Query patterns and performance requirements,All of the above,4
+152,21001,How can data partitioning be used in conjunction with data compression to further improve data warehouse efficiency?,NA,Medium,Single correct,By separating frequently accessed data for faster compression,By enabling compression algorithms to be tailored to specific data partitions,Both (a) and (b),Neither (a) nor (b),3
+153,21001,"Which type of data compression is lossless, meaning it guarantees no data loss after decompression?",NA,Medium,Single correct,Huffman coding,Run-length encoding,Lempel-Ziv coding (LZ77),"All of the above
+",4
+154,21001,"Which type of compression is typically faster but may result in some data loss?
+",NA,Medium,Single correct,Dictionary encoding,Huffman coding,Quantization,Delta encoding,3
+155,21001,"Which compression technique is well-suited for handling repetitive sequences of characters?
+",NA,Medium,Single correct,Bzip2,Run-length encoding,Lempel-Ziv coding (LZMA),Fractal compression,2
+156,21001,Which compression algorithm adapts to the data it encounters and dynamically builds a dictionary on the fly?,NA,Medium,Single correct,Huffman coding,Dictionary encoding,"Lempel-Ziv coding (LZ77, LZMA)",Vector quantization,3
+157,21001,"Which type of compression is commonly used for images and videos, discarding high-frequency information less noticeable to the human eye?
+",NA,Medium,Single correct,Lossless compression,"Transform coding (DCT, etc.)",Entropy coding,Statistical compression,2
+158,21001,Which compression technique is often used for text files and aims to represent characters with codes based on their frequency?,NA,Medium,Single correct,Dictionary encoding,Huffman coding,Arithmetic coding,Fractal compression,2
+159,21001,"Which type of data compression works best for highly structured data with predictable patterns?
+",NA,Medium,Single correct,Dictionary encoding,Run-length encoding,Delta encoding,Fractal compression,3
+160,21001,Which compression algorithm is computationally expensive but potentially achieves the highest compression ratios?,NA,Medium,Single correct,Bzip2,Lempel-Ziv coding (LZMA),Deflate (used in ZIP),Run-length encoding,2
+161,21001,Which type of data compression is still under development and aims to represent complex data with self-similar patterns?,NA,Medium,Single correct,Dictionary encoding,Vector quantization,Fractal compression,Transform coding,3
+162,21001,Which characteristic distinguishes a data warehouse from an operational database?,NA,Medium,Single correct,Subject-oriented vs. transaction-oriented focus,Integrated vs. normalized data structures,Historical vs. real-time data storage,All of the above,4
+163,21001,"What is the primary benefit of implementing a data mart over a full-fledged data warehouse?
+",NA,Medium,Single correct,Higher cost-effectiveness for specific departments,Faster data access and query performance,Improved data quality and consistency,Enhanced centralized data governance,1
+164,21001,Which data modeling technique best handles slowly changing dimensions in a data warehouse?,NA,Medium,Single correct,Dimensional modeling,Entity-relationship modeling,Data vault modeling,Operational data store (ODS) approach,3
+165,21001,What is the main purpose of dimension tables in a data warehouse?,NA,Medium,Single correct,Store detailed transaction data,Aggregate measures for analysis,Provide context and reference for facts,Ensure data consistency across sources,3
+166,21001,Which type of normalization should be avoided in a data warehouse design?,NA,Medium,Single correct,Third Normal Form (3NF), Fourth Normal Form (4NF),Boyce-Codd Normal Form (BCNF),Denormalization,4
+167,21001,What is the advantage of using star schemas in data warehouse modeling?,NA,Medium,Single correct,"Efficient storage utilization for small data sets
+",Complex relationship representation between entities,Simplified joins and faster query performance,Improved data security and access control,3
+168,21001,What is the role of data staging in the data warehouse development process?,NA,Medium,Single correct,Transform and clean data from disparate sources,Store historical data for long-term archiving,Manage user access and security controls,Optimize query performance in the production environment,1
+169,21001,Which compression technique offers the best trade-off between compression ratio and query performance in data warehouses?,NA,Medium,Single correct,Dictionary encoding,Run-length encoding,Lempel-Ziv coding (LZMA),Columnar storage with compression,4
+170,21001,What is the primary drawback of using lossless compression for dimension tables in a data warehouse?,NA,Medium,Single correct,"Potential loss of data accuracy, making it unsuitable for analysis",Significantly increased processing overhead during compression and decompression,"Lower compression ratios compared to lossy methods, wasting storage space",Reduced flexibility for applying different compression algorithms within the table,3
+171,21001,Which data partitioning approach can be effectively combined with data compression to further improve storage efficiency in a data warehouse?,NA,Medium,Single correct,Random partitioning based on data size,Functional partitioning based on specific business processes,Range partitioning based on data values within columns,All of the above,3
+172,21001,How can data compression impact the performance of drill-down queries in a data warehouse?,NA,Medium,Single correct,Always improve performance due to reduced data volume to process,Potentially slow down queries involving decompressed data from specific columns,Have no significant impact on query performance,Significantly increase the complexity of query optimization,2
+173,21001,Which hybrid compression technique is widely used in data warehouses due to its flexibility and efficiency?,NA,Medium,Single correct,Bzip2 + LZMA,Huffman coding + Run-length encoding,LZ77 + Delta encoding,Dictionary encoding + Columnar storage,1
+174,21001,What is the main advantage of using adaptive compression methods in a data warehouse environment?,NA,Medium,Single correct,Achieve faster compression speeds regardless of data characteristics,Automatically adjust compression parameters based on changing data patterns,Guarantee lossless compression for all data types within the warehouse,Simplify data management tasks by eliminating manual configuration,2
+175,21001,What are some potential downsides of using compression algorithms with high compression ratios in data warehouses?,NA,Medium,Single correct,Always improve query performance due to smaller data sizes,May increase processing overhead during compression and decompression,"Can introduce data loss and inaccuracies, impacting analysis",May not be compatible with all data warehouse query tools,2
+176,21001,"What is the primary focus of dimensional modeling in data warehouse design?
+",NA,Medium,Single correct,Representing detailed transactions and operational data,Defining relationships between entities and data elements,Organizing data around specific subjects and business processes,Optimizing performance for large-scale data processing,3
+177,21001,"Which type of dimension table best supports historical analysis in a data warehouse?
+",NA,Medium,Single correct,Conformed dimension,Slowly changing dimension Type 1 (SCD1),Slowly changing dimension Type 2 (SCD2),Degenerate dimension,3
+178,21001,What is the main advantage of using snowflake schemas in data warehouse design?,NA,Medium,Single correct,Efficient representation of complex relationships between multiple entities,Simplified queries and faster performance for analytical tasks,Reduced data redundancy and improved data integrity,Enhanced flexibility for accommodating future data expansions,1
+179,21001,What is the key difference between a data vault and a traditional star schema in data warehouse modeling?,NA,Medium,Single correct,"Data vaults use normalized dimension tables, while star schemas use denormalized ones.
+","Data vaults prioritize historical completeness, while star schemas prioritize query performance.","Data vaults store all historical data in a single table, while star schemas distribute it across multiple tables.","Data vaults focus on operational data, while star schemas focus on analytical data.",2
+180,21001,What is the role of factless fact tables in data warehouse design?,NA,Medium,Single correct,They store detailed transaction data for operational analysis.,They hold aggregated measures without any associated dimension attributes.,They act as bridge tables between dimension and fact tables.,They provide metadata about the data warehouse itself.,2
+181,21001,"How can denormalization be strategically used to improve query performance in a data warehouse?
+",NA,Medium,Single correct,By introducing redundancies that eliminate costly joins.,By increasing the complexity of the data model.,By reducing the overall size of the data warehouse.,By normalizing dimension tables to their highest form.,1
+182,21001,What are some important factors to consider when choosing a modeling approach for a data warehouse?,NA,Medium,Single correct,The specific business needs and key analyses required.,The available data sources and their structures.,The technical skills and experience of the data warehouse team.,All of the above.,4
+183,21001,What is the main purpose of using concept hierarchies in a data warehouse?,NA,Medium,Single correct,To enforce data integrity and eliminate inconsistencies.,To categorize and organize data into different levels of abstraction.,To store historical values of dimension attributes for analysis.,"To improve compression ratios and reduce storage requirements.
+",2
+184,21001,"Which types of data warehouse schemas typically benefit the most from using concept hierarchies?
+",NA,Medium,Single correct,Factless fact tables,Star schemas,Snowflake schemas,"All of the above
+",4
+185,21001,"What are the two main types of concept hierarchies used in data warehouses?
+",NA,Medium,Single correct,Descriptive hierarchies and functional hierarchies,Parent-child hierarchies and sibling hierarchies,Symmetric hierarchies and asymmetric hierarchies,Granular hierarchies and summarized hierarchies,1
+186,21001,What are the potential drawbacks of using overly complex concept hierarchies in a data warehouse?,NA,Medium,Single correct,Improved data accuracy and understanding of relationships,"Increased query performance due to efficient data organization
+",Reduced user comprehension and analysis due to complexity,Increased storage requirements for storing multiple levels of data,3
+187,21001,How can data lineage be maintained when modifying concept hierarchies in a data warehouse?,NA,Medium,Single correct,Concept hierarchies inherently preserve lineage information.,"Manually track changes to hierarchy definitions and data transformations.
+",Use dedicated data lineage tools integrated with the hierarchy management system.,Both (b) and (c),4
+188,21001,What are some advantages of using parent-child roll-up aggregates in concept hierarchies?,NA,Medium,Single correct,Reduced storage requirements by storing pre-calculated aggregates.,Improved query performance for roll-up and drill-down analysis.,Enhanced data security by restricting access to lower levels of the hierarchy.,Simplified hierarchy definition and maintenance.,2
+189,21001,"How can concept hierarchies be effectively integrated with data visualization tools in data warehouses?
+",NA,Medium,Single correct,By directly displaying the hierarchy structure within the visualization.,By allowing users to interactively navigate through different levels of the hierarchy.,"By color-coding or otherwise highlighting different levels for clarity.
+", All of the above,4
+190,21001,How are data types used differently in a data warehouse compared to a transactional database?,NA,Medium,Single correct,Data types are optimized for aggregation and analysis in data warehouses,Data types in data warehouses are typically standardized for easier integration.,Data warehouses might store less precise types to save storage space,All of the above,4
+191,21001,"Which data type might be most challenging to store and manage in a data warehouse?
+",NA,Medium,Single correct,"Integer (e.g., product ID)","String (e.g., customer name)","Decimal (e.g., sales amount)","Semi-structured data (e.g., JSON, XML)",4
+192,21001,How can choosing the right data type for a data warehouse column improve performance?,NA,Medium,Single correct,Smaller data types reduce storage requirements and query processing time,"Choosing appropriate data types ensures accurate calculations and aggregations.
+",Both (a) and (b).,"Data types don't significantly impact performance in data warehouses.
+",3
+193,21001,What are some emerging data types gaining importance in data warehousing?,NA,Medium,Single correct,"Geospatial data (e.g., location coordinates)","Time series data (e.g., sensor readings over time)","Graph data (e.g., relationships between entities)",All of the above.,4
+194,21001,What is the main objective of data normalization in a data warehouse?,NA,Medium,Single correct,Improve data storage efficiency,Enhance data analysis performance.,Reduce data redundancy and anomalies.,All of the above.,4
+195,21001,In which normal form are tables free from all types of data redundancies?,NA,Medium,Single correct,First Normal Form (1NF),Second Normal Form (2NF),Third Normal Form (3NF),Fourth Normal Form (4NF),3
+196,21001,How does normalization impact query performance in a data warehouse?,NA,Medium,Single correct,"Negatively, as normalized tables require more joins.","Positively, as smaller tables offer faster access and manipulation.","No significant impact, performance depends on query complexity.","Depends on the level of normalization, higher levels can decrease performance.",2
+197,21001,"When considering data warehousing and normalization, which statement is NOT true?
+",NA,Medium,Single correct,"Denormalization might be acceptable for specific performance-critical dimensions.
+",Fact tables typically follow lower normalization levels than dimension tables.,Over-normalization can increase complexity and impact query flexibility.,"Normalization always provides the best data storage solution for data warehouses.
+",4
+198,21001,What are the main reasons for discretizing continuous attributes in data warehousing?,NA,Medium,Single correct,Improve query performance (by reducing data size and simplifying aggregation),"Reduce storage requirements (by using smaller data types)
+",Facilitate data mining and analysis (by making categorical relationships clearer),All of the above,4
+199,21001,What are the potential pitfalls of discretization in data warehousing?,NA,Medium,Single correct,Loss of information (granularity is reduced),Difficulty in choosing optimal bin boundaries (affects analysis),Introduction of bias (depending on chosen technique),"All of the above
+",4
+200,21001,"When should you avoid discretizing continuous attributes in data warehousing?
+",NA,Medium,Single correct,"When precise value comparisons are important (e.g., financial transactions)",When dealing with small datasets (discretization provides little benefit),"When the attribute distribution is highly skewed (discretization can distort relationships)
+",All of the above,4
+201,21001,"Which of the following are BEST PRACTICES for discretizing continuous attributes in data warehousing?
+",NA,Medium,Single correct,Analyze data distribution and choose appropriate technique.,Test different binning strategies and compare results.,"Document chosen discretization method and reasoning.
+",All of the above.,4
+202,21001,Which of the following are NOT valid reasons for using sampling in data warehousing? (Select two),NA,Medium,Single correct,"Improve performance of data analysis on large datasets.
+",Reduce storage requirements for detailed data.,Ensure the sample accurately represents the entire population.,Allow for targeted analysis of specific data subsets.,3
+203,21001,Which sampling method is best suited for analyzing trends over time in a data warehouse?,NA,Medium,Single correct,Simple random sampling.,Stratified sampling.,"Systematic sampling.
+","Cluster sampling.
+",3
+204,21001,Sampling techniques like stratified or cluster sampling often involve dividing the population into groups. What is the main purpose of grouping in these methods?,NA,Medium,Single correct,"Reduce the overall sample size needed.
+",Improve the efficiency of data retrieval.,Ensure each group contributes proportionately to the sample.,Simplify data analysis by focusing on specific segments.,3
+205,21001,"How can you assess the potential errors associated with a data warehouse sample?
+",NA,Medium,Single correct,Calculate the confidence interval based on the sample size.,Compare the sample results to known statistics of the entire population,Analyze the distribution of sampling errors across different data sub-groups.,All of the above.,4
+206,21001,What are the two main categories of data compression used in data warehouses?,NA,Medium,Single correct,Lossy and Lossless,Dictionary and Run-length,Columnar and Row-based,Bitmap and Delta,1
+207,21001,"What are the primary benefits of data compression in data warehouses?
+",NA,Medium,Single correct,Improved data accuracy and integrity,Reduced storage space and query performance,Enhanced security and data governance,"Increased data complexity and ETL requirements
+
+",2
+208,21001,What is the trade-off between compression levels and query performance?,NA,Medium,Single correct,"Higher compression always leads to slower queries.
+","There is no impact of compression on query speed.
+","Decompressing data adds overhead, potentially slowing down queries.",Compression always improves query performance,3
+209,21001,What data type typically benefits the most from dictionary encoding compression?,NA,Medium,Single correct,Numerical data with a wide range of values,Dates and timestamps with unique values,Categorical data with repeated values,"Images and audio files with high redundancy
+",3
+210,21001,"What is the advantage of utilizing columnar storage with compression in data warehouses?
+",NA,Medium,Single correct,Columnar storage automatically applies optimal compression to all data.,"Queries only access relevant columns, reducing decompression overhead.",Columnar storage speeds up compression and decompression processes.,Compressed data automatically aligns neatly in columns for faster access.,2
+211,21001,"Which two techniques can be combined to maximize compression efficacy in a data warehouse?
+",NA,Medium,Single correct,Columnar storage and Run-length encoding,"Lossless compression and Dictionary encoding
+",Bitmap encoding and Delta encoding,Row-based storage and Compression dictionaries,1
+212,21001,"What are the two main types of data compression used in data warehousing?
+",NA,Medium,Single correct,Lossy and lossless,"Row-based and column-based
+",Dictionary encoding and run-length encoding,Predictive and entropy-based,1
+213,21001,"What is the impact of using columnar storage in conjunction with compression in data warehousing?
+",NA,Medium,Single correct,No significant impact,Improves compression effectiveness,Worsens query performance,Requires specialized hardware,2
+214,21001,"How can you determine the best compression algorithm for your data warehouse?
+",NA,Medium,Single correct,"Use a fixed, default algorithm for all data.
+",Benchmark different algorithms on representative data samples.,Rely on vendor recommendations without testing.,Choose the algorithm with the highest compression ratio regardless of data type.,2
+215,21001,"Which of the following are NOT primary goals of data warehouse modeling?
+",NA,Medium,Single correct,Efficient storage of historical data,Optimization for complex and ad-hoc queries,Transactional processing of real-time data,Support for multi-dimensional analysis,3
+216,21001,"Which of the following are common dimensions found in dimensional data models?
+",NA,Medium,Single correct,"Customer
+",Product,Time,All of the above,4
+217,21001,Which of the following data modeling techniques is most commonly used in data warehouses?,NA,Medium,Single correct,Entity-Relationship Modeling (ERM),Star Schema,Snowflake Schema,Data Vault,2
+218,21001,What is the main difference between the Inmon and Kimball approaches to data warehouse modeling?,NA,Medium,Single correct,"Inmon prioritizes data extraction and staging, while Kimball prioritizes grain selection and dimension design.","Inmon uses a top-down approach, while Kimball uses a bottom-up approach.","Inmon is better suited for OLAP, while Kimball is better suited for data mining.","Inmon requires no data transformation, while Kimball requires extensive transformation.",2
+219,21001,"What are the advantages of using conformed dimensions in a data warehouse?
+",NA,Medium,Single correct,Improved data consistency and quality,Enhanced ability to compare data across different subject areas,Reduced storage requirements,All of the above,4
+220,21001,"What is the primary function of a ""conformed dimension"" in a data warehouse?
+",NA,Medium,Single correct,To store detailed attributes about a specific business entity.,To represent a single event or fact that occurred at a specific time.,To ensure consistent definitions and values across different subject areas.,To bridge the gap between operational and analytical systems.,3
+221,21001,"Which schema does NOT typically consist of a central fact table surrounded by dimension tables?
+",NA,Medium,Single correct,Star Schema,Snowflake Schema,Fact Constellation Schema,Relational Schema,4
+222,21001,"In a star schema, what type of data typically resides in the fact table?",NA,Medium,Single correct,Descriptive attributes about entities,Foreign keys for joining with dimensions,"Quantitative measures and metrics
+",All of the above,3
+223,21001,"What is the advantage of a snowflake schema compared to a star schema?
+",NA,Medium,Single correct,"Simpler query performance
+","Reduced data redundancy
+","Ability to represent more complex relationships
+","More efficient storage usage
+",3
+224,21001,"Which schema is best suited for situations with numerous, highly inter-related dimensions?
+",NA,Medium,Single correct,Star Schema,Snowflake Schema,Fact Constellation Schema,Both (b) and (c),4
+225,21001,"What is the primary purpose of using a multidimensional data model in a data warehouse?
+",NA,Medium,Single correct,Transaction processing and data updates,Complex financial calculations and accounting,Online analytical processing and ad-hoc query analysis,Online analytical processing and ad-hoc query analysis,3
+226,21001,What is a potential drawback of using a multidimensional data model?,NA,Medium,Single correct,Higher storage requirements compared to relational models,Slower performance for transactional operations,Difficulty in integrating with existing relational systems,All of the above,4
+227,21001,"Which types of concept hierarchies are commonly used in data warehousing?
+",NA,Medium,Single correct,"Generalization/Specialization hierarchies (e.g., product category > product subcategory > product)","Set-grouping hierarchies (e.g., age groups, income brackets)","Temporal hierarchies (e.g., year > quarter > month)",All of the above,4
+228,21001,How are concept hierarchies typically implemented in data warehouse schemas?,NA,Medium,Single correct,As separate tables with foreign key relationships,"Stored directly within dimension tables using dedicated columns
+",A combination of (a) and (b) depending on the complexity of the hierarchy,Embedded within fact tables for performance optimization,3
+229,21001,What are some potential challenges in designing and implementing effective concept hierarchies?,NA,Medium,Single correct,Defining the appropriate level of granularity and aggregation,Ensuring consistency and alignment with existing business rules,"Handling dynamic changes in the data and hierarchy structure
+","Choosing the right technology and tools for managing hierarchies
+",4
+230,21001,How can measures be categorized based on the type of aggregate functions used?,NA,Medium,Single correct,Ordinal and Quantitative,"Distributive, Algebraic, and Holistic
+",Simple and Complex,Atomic and Composite,2
+231,21001,"Which of the following is NOT considered a Distributive measure?
+",NA,Medium,Single correct,Count,Average, Minimum,Standard Deviation,2
+232,21001,"Which measure could be considered both Algebraic and Holistic depending on the context?
+",NA,Medium,Single correct,Sum ,Variance,Maximum,Ratio,2
+233,21001,"What is the key benefit of categorizing measures into Distributive, Algebraic, and Holistic?
+",NA,Medium,Single correct,Improves data modeling complexity,Enables efficient data storage and retrieval,Facilitates parallel processing and querying,"Simplifies user understanding of data
+",3
+234,21001,What challenges arise when dealing with Holistic measures in data warehousing?,NA,Medium,Single correct,They are prone to errors due to complex calculations.,"They require specialized hardware for efficient processing.
+","They may not be easily interpretable for business users.
+",Ratio,4
+235,21001,An example of a distributive measure in a retail data warehouse is:,NA,Medium,Single correct,Customer ID,Average age of customers,"Total number of products sold
+",Customer loyalty score,3
+236,21001,An example of an algebraic measure in a data warehouse is:,NA,Medium,Single correct,Number of unique customers,Percentage of orders shipped on time,Total sales revenue,Average product price,2
+237,21001,Holistic measures typically require complex calculations like:,NA,Medium,Single correct,Sum and average,Variance and standard deviation, Minimum and maximum values,Count and distinct count,2
+238,21001,"Which of the following data types are commonly stored in a data warehouse?
+",NA,Medium,Multi correct,Images,Dates ,Names,Transaction IDs,"2,3"
+239,21001,Which of the following are valid techniques for discretizing continuous attributes?,NA,Medium,Multi correct,Equal-width binning (divide range into equal-sized bins),"Equal-depth binning (divide range into bins with equal number of data points)
+",K-means clustering (group data points into k clusters),"Decision trees (split data based on attribute values)
+","1,2,3,4"
+240,21001,"When choosing a sampling method for a data warehouse, which factors should be prioritized? (Select three)
+",NA,Medium,Multi correct,ample size to ensure statistical accuracy.,Ease of implementation with existing tools.,Minimizing bias towards specific data sub-groups.,"Stratification to represent key demographics in the population.
+","1,3,4"
+241,21001,"Which of the following are benefits of data compression in data warehousing? (Select all that apply)
+",NA,Medium,Multi correct,Saving storage space,Reducing data transfer costs,Improving query performance (always),Increasing data integrity,"1,2,3"
+242,21001,"Which data types are not well-suited for compression in data warehousing?
+",NA,Medium,Multi correct,Numeric data with high cardinality (unique values),Dates and timestamps,Text data with high entropy (randomness),Fixed-length strings,"1,3"
+243,21001,Which of the following are TRUE about data warehouse modeling? (Select all that apply),NA,Medium,Multi correct,"It serves as the blueprint for the data warehouse, defining how data is organized and relationships are established.","It prioritizes efficient storage and retrieval of data for operational processes.
+",It optimizes data for complex analytical queries and historical trends,It follows the same methodology as traditional database modeling.,"1,3"
+244,21001,"Which of the following are common dimensional modeling techniques used in data warehouses? (Select all that apply)
+",NA,Medium,Multi correct,Star Schema,Snowflake Schema,Fact Constellation Schema,Entity-Relationship Model,"1,2,3"
+245,21001,What are the main advantages of the Data Vault modeling approach compared to traditional dimensional modeling?,NA,Medium,Multi correct,"Increased flexibility and agility for adapting to changing data sources.
+",Stronger data lineage and auditability for tracing data origins.,Improved query performance for large and complex datasets.,Reduced development time and easier implementation.,"1,2"
+246,21001,"Which of the following factors should be considered when choosing a data warehouse modeling technique?
+",NA,Medium,Single correct,The complexity and volume of data to be stored.,"The specific business questions and analytical needs.
+",The available software and hardware resources,All of the above.,4
+247,21001,What are the primary benefits of using concept hierarchies in data warehousing?,NA,Medium,Multi correct,Improved data storage efficiency,Consistent representation of data across different levels of granularity,Facilitation of OLAP operations like roll-up and drill-down,Enhanced data security and access control,"2,3"
+248,21001,"What are some advanced techniques for utilizing concept hierarchies in data analysis and OLAP?
+",NA,Medium,Multi correct,Dimension filtering and slicing based on hierarchy levels,Calculation of aggregate measures at different levels of granularity,Drill-through analysis to navigate between parent and child concepts,"Dynamic generation of reports and dashboards based on user selections
+","1,2,3,4"
+249,21001,"Measures in a data warehouse are numerical attributes used for:
+",NA,Medium,Multi correct,Describing properties of facts,Performing aggregations and analysis,Storing raw data points,Grouping data records together,"1,2"
+250,21001,"Based on the type of aggregate functions used, measures can be categorized into:
+
+",NA,Medium,Multi correct,Distributive,Algebraic,Holistic,Nominal,"1,2,3"

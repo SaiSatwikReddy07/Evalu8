@@ -1,0 +1,354 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Grotesk";
+}
+
+body{
+    background-color: #FBFADA;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #FBFADA;
+}
+
+body::-webkit-scrollbar-thumb {
+    cursor: pointer !important;
+    background-color: #ADBC9F;
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #436850
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #12372A;
+    color: #ADBC9F;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    padding: 0px 20px;
+    font-family: "Space Grotesk";
+}
+
+.header-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navigation button{
+    padding: 10px 20px;
+    margin: 0px 10px;
+    background-color: transparent;
+    border: none;
+    color: #ADBC9F;
+    font-size: medium;
+    transition: all 0.15s ease-in-out;
+}
+
+.header-navigation button:hover{
+    background-color: rgba(173, 188, 159, 0.2);
+    cursor: pointer;
+}
+
+.header-navigation button:last-child{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-navigation:hover>:not(:hover){
+    opacity: 0.5;
+}
+
+.welcome-note{
+    margin: 80px 20px 20px 20px;
+    padding-top: 10px;
+    color: #12372A;
+}
+
+.welcome-note span{
+    color: #436850;
+}
+
+#main-container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#quote-and-widgets{
+    padding: 10px;
+    display: flex;
+    height: 50vh;
+    gap: 10px;
+    color: #12372A;
+}
+
+#quote{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: #436850;
+    color: #ADBC9F;
+    border-radius: 10px;
+}
+
+#widgets{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#courses-and-tests{
+    display: flex;
+    height: 50%;
+    gap: 10px;
+}
+
+#courses{
+    background-image: linear-gradient(to left, #ADBC9F 50%, #436850 50%);
+    background-size: 200%;
+    background-position: right;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+    border: none;
+    font-size: large;
+    color: #12372A;
+}
+
+#courses:hover{
+    background-position: left;
+    cursor: pointer;
+    color: #FBFADA;
+}
+
+#tests{
+    background-image: linear-gradient(to right, #ADBC9F 50%, #436850 50%);
+    background-size: 200%;
+    background-position: left;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+    border: none;
+    font-size: large;
+    color: #12372A;
+}
+
+#create-course{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ADBC9F;
+    display: none;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+#create-course-row-one{
+    display: flex;
+    gap: 10px;
+}
+
+.create-course-button-row{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    height: 20%;
+    justify-content: center;
+}
+
+.create-course-button-row button:nth-child(2){
+    background-color: #436850;
+    border: none;
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    color: #FBFADA;
+    border: 1px solid #436850;
+    transition: all 0.15s linear;
+}
+
+.create-course-button-row button:nth-child(1){
+    height: 100%;
+    background-color: transparent;
+    width: 40%;
+    border: 1px solid #12372A;
+    color: #12372A;
+    border-radius: 5px;
+    transition: all 0.15s linear;
+}
+
+.create-course-button-row button:hover{
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input, select{
+    background-color: #FBFADA;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+input:active, input:focus, select:active, select:focus{
+    outline: 1px solid #12372A;
+}
+
+input:hover, select:hover{
+    cursor: pointer;
+}
+
+#tests:hover{
+    background-position: right;
+    cursor: pointer;
+    color: #FBFADA;
+}
+
+#tests i, #courses i{
+    font-size: 36px;
+}
+
+#feedback i{
+    font-size: 32px;
+}
+
+#feedback{
+    font-size: x-large;
+    height: 50%;
+    display: flex;
+    background-color: #ADBC9F;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.15s;
+}
+
+#feedback:hover{
+    background-color: #436850;
+    color: #FBFADA;
+    cursor: pointer;
+}
+
+#pinned-courses-container{
+    margin: 0px 10px 20px 10px;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#pinned-course-header{
+    color: #12372A;
+    margin: 10px 10px 20px 20px;
+    padding: 10px 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#pinned-course-header i{
+    font-size: 36px;
+}
+
+.pinned-course{
+    background-color: #ADBC9F;
+    display: flex;
+    height: 120px;
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+    color: #12372A;
+}
+
+#pinned-courses-container:hover>:not(:hover){
+    scale: 0.99;
+    filter: brightness(0.8);
+}
+
+.pinned-course *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.course-code{
+    width: 20%;
+    background-color: #436850;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #ADBC9F;
+}
+
+.others{
+    padding: 0px 40px;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-name{
+    font-weight: bold;
+    font-size: larger;
+    width: 70%;
+    justify-content: flex-start;
+}
+
+.information{
+    width: 40%;
+    justify-content: space-between;
+}
+
+.batch i, .students i{
+    padding-right: 10px;
+    font-size: xx-large;
+}
+
+.remove-pinned{
+    background-color: transparent;
+    border: none;
+    transition: all 0.15s ease-in-out;
+    color: #12372A;
+}
+
+.remove-pinned i{
+    font-size: xx-large;
+}
+
+.remove-pinned:hover{
+    cursor: pointer;
+    color: rgb(120, 20, 20);
+}

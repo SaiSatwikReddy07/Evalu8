@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Courses | Evalu8</title>
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <script src="{{url_for('static', filename='scripts/student-courses-scripts.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student-courses-styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/E8-favicon.png') }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    
+    <header id="main-header">
+        <h2 class="logo">E8.</h2>
+        <div class="header-navigation">
+            <button onclick="redirect('showStudentDashboard')">Dashboard</button>
+            <button onclick="redirect('studentCourses')">Courses</button>
+            <button onclick="redirect('studentTestHistory')">Tests</button>
+            <button onclick="redirect('studentProfile')">Profile</button>
+            <button onclick="logout()">Logout <span class="material-symbols-outlined">logout</span></button>
+        </div>
+    </header>
+
+    <h1 class="welcome-note">Active Courses</h1>
+
+    <div id="active-container">
+        <!--
+        <div class="course-card">
+            <h1 class="course-code">21AIE101</h1>
+
+            <div class="information">
+                <p class="course-name">Natural Language Processing</p>
+                <div class="faculty-info">
+                    <p id="faculty_name"><span class="material-symbols-outlined">person</span>Soman KP</p>
+                    <p id="faculty_email"><span class="material-symbols-outlined">mail</span>cb.fac.101@cb.faculty.amrita.edu</p>
+                    <p id="active">Active</p>
+                </div>
+            </div>
+
+            <div class="button-column">
+                <button class="open-course">Open course</button>
+                <button class="create-test">Contact Faculty</button>
+            </div>
+        </div>
+        -->
+    </div>
+
+    <h2 id="inactive-head">Inactive/Expired Courses 
+        <button id="open-inactive" onclick="openInactive()">
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </button>
+    </h2>
+
+
+    <div id="inactive-container">
+        <!--
+        <div class="course-card">
+            <h1 class="course-code">21AIE101</h1>
+
+            <div class="information">
+                <p class="course-name">Natural Language Processing</p>
+                <div class="faculty-info">
+                    <p id="faculty_name"><span class="material-symbols-outlined">person</span>Soman KP</p>
+                    <p id="faculty_email"><span class="material-symbols-outlined">mail</span>sjdnhfb@hdbfh</p>
+                    <p id="inactive">Inactive</p>
+                </div>
+            </div>
+
+            <div class="button-column">
+                <button class="open-course">Open course</button>
+                <button class="create-test">Contact Faculty</button>
+            </div>
+        </div>
+        -->
+    </div>
+
+</body>
+</html>

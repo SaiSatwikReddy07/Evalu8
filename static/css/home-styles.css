@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FBFADA;
+}
+
+img{
+    position: absolute;
+    z-index: -1;
+    height: 600px;
+}
+
+#title-container{
+    display: flex;
+}
+
+#title{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 6rem;
+    display: flex;
+    background-image: linear-gradient(to right, #436850, #12372A);
+    animation: textReveal 1s linear forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+#cursor{
+    color: #12372A;
+    font-size: 6rem;
+    animation: cursorAnimation 0.8s linear infinite;
+}
+
+#tagline{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    font-family: "Space Grotesk";
+    color: transparent;
+}
+
+#login-button{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+button{
+    background-image: linear-gradient(to left, #FBFADA 50%, #436850 50%);
+    border: none;
+    background-size: 200% 100%;
+    background-position: right;
+    padding: 1rem 100%;
+    font-family: "Space Grotesk";
+    font-weight: bold;
+    transition: all 0.35s ease-in;
+}
+
+button:hover{
+    background-position: left;
+    cursor: pointer;
+    color: #FBFADA;
+}
+
+@keyframes textReveal {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes cursorAnimation {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

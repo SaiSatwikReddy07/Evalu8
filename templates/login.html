@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Evalu8</title>
+    
+    <script src="{{url_for('static', filename='scripts/login-scripts.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login-styles.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/E8-favicon.png') }}">
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<body>
+    
+    <div id="container">
+
+        <div id="image-container">
+            <img src="{{ url_for('static', filename='assets/sapiens.svg') }}" alt="SVG Image">
+        </div>
+
+        <div id="main-container">
+        
+            <div id="main-container-one">
+                <div id="login-display">
+                    <h1 id="login-note">Login to&nbsp;<span>Evalu8<span></h1>
+                    
+                    <div id="login-main">
+                        <div id="position-selector-row">
+                            <p>Logging in as : </p>
+                            <div class="select-option">
+                                <input type="radio" id="position-student" name="position" value="student">
+                                <label for="position-student">Student</label>
+                            </div>
+                            
+                            <div class="select-option">
+                                <input type="radio" id="position-faculty" name="position" value="faculty">
+                                <label for="position-faculty">Faculty</label>
+                            </div>
+                        </div>
+                        <input id="username-for-login" placeholder="CB.EN.U4AIEXXXXX">
+                        <div id="pass-row">
+                            <input id="password-for-login" type="password" placeholder="Password">
+                            <button id="show-password" onclick="showPassword()"><i class="fa-regular fa-eye"></i></button>
+                            <button id="hide-password" onclick="hidePassword()"><i class="fa-regular fa-eye-slash"></i></button>
+                        </div>
+                        <br>
+                        <button id="hit-login" onclick="redirect()">Login</button>
+                        <button id="forgot-password">Forgot Password ?</button>
+                    </div>
+                </div>
+
+                <div id="start-signup">
+                    <h3>Join Evalu8</h3>
+                    <button id="go-to-signup"><i class="fa-solid fa-chevron-left"></i></button>
+                </div>
+            </div>
+
+            <div id="main-container-two">
+                <div id="start-login">
+                    <h3>Login to Evalu8</h3>
+                    <button id="go-to-login"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div id="signup-display">
+                    <h1 id="signup-note">Join&nbsp;<span>Evalu8<span></h1>
+                    
+                    <div id="signup-main">
+                        <input id="username-for-signup" placeholder="CB.EN.U4AIEXXXXX">
+                        <input id="password-for-signup" placeholder="Password" type="password">
+                        <input id="confirm-password-for-signup" placeholder="Confirm Password" type="password"><br>
+                        <button id="hit-signup">Join Evalu8</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

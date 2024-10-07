@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latex Tester | Evalu8</title>
+    <!-- Include KaTeX library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <!-- Optional: KaTeX auto-render extension -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+
+    <!--Space Grotesk-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: "Space Grotesk";
+        }
+
+        body{
+            background-color: #FBFADA;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            overflow-y: hidden;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #12372A;
+            color: #ADBC9F;
+            padding: 10px 10px;
+        }
+
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+        }
+
+        #sentence{
+            background-color: white;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 20px;
+            width: 50%;
+            flex-wrap: wrap;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: #ADBC9F;
+        }
+
+        #sentence:active, #sentence:focus{
+            outline: none;
+            box-shadow: 0px 0px 20px #ADBC9F;
+        }
+
+        button{
+            margin: 10px;
+            padding: 23px 20px;
+            border: none;
+            border-radius: 10px;
+            background-image: linear-gradient(to left, #436850 50%, #ADBC9F 50%);
+            background-size: 200% 100%;
+            background-position: right;
+            transition: all 0.15s ease-in-out;
+            color: #FBFADA;
+        }
+
+        button:hover{
+            background-position: left;
+            color: #12372A;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>E8.</h2>
+        <h3>Latex Tester</h3>
+    </header>
+
+    <div id="container">
+        <div id="sentence" contenteditable="true"></div>
+
+        <button onclick="renderMath()">Render Math</button>
+    </div>
+
+    <script>
+        function renderMath() {
+            // Auto-render math expressions in the specified element
+            renderMathInElement(document.getElementById("sentence"), {
+                delimiters: [
+                    { left: "\\(", right: "\\)", display: false },
+                    { left: "\\[", right: "\\]", display: true }
+                ]
+            });
+        }
+    </script>
+</body>
+</html>
