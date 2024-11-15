@@ -1,6 +1,7 @@
 # EVALU8
 ## Notice: Limited Public Access
-This repository contains limited information about Evalu8, an AI-powered evaluation platform developed for the Department of Artificial Intelligence at Amrita Vishwa Vidyapeetham, Coimbatore, India. This will be referred to as E8 in this documentation.
+
+This repository contains limited information about *Evalu8* (referred to as *E8* in this documentation), an AI-powered evaluation platform developed for the Department of Artificial Intelligence at Amrita Vishwa Vidyapeetham, Coimbatore, India.  
 
 Due to institutional policies and the specialized nature of this project, which is tailored exclusively for academic use within the School of AI, the complete source code and implementation details cannot be made publicly available.
 
