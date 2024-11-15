@@ -6,7 +6,6 @@ This repository contains limited information about *Evalu8* (referred to as *E8*
 Due to institutional policies and the specialized nature of this project, which is tailored exclusively for academic use within the School of AI, the complete source code and implementation details cannot be made publicly available.
 
 <br>
-
 We took up this project during the summer vacation and developed it for the faculty of our department, the School of Artificial Intelligence at Amrita Vishwa Vidyapeetham, Coimbatore, India.
 
 
